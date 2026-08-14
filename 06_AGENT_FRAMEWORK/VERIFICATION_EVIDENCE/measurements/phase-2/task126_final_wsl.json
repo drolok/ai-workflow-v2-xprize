@@ -1,0 +1,1149 @@
+{
+  "schema": "task123-ground-truth-v1",
+  "generated_at": "2026-08-14T17:53:28.123912+00:00",
+  "duration_ms": 7927.196,
+  "documents_scanned": 23,
+  "documents_with_grounds": 22,
+  "summary": {
+    "claims": 88,
+    "VERDADERO": 86,
+    "FALSO": 0,
+    "NO COMPROBABLE": 2
+  },
+  "per_document": [
+    {
+      "document": "00_COMMAND_CENTER/CURRENT_STATE.md",
+      "claims": 5,
+      "VERDADERO": 5,
+      "FALSO": 0,
+      "NO COMPROBABLE": 0
+    },
+    {
+      "document": "00_COMMAND_CENTER/SYSTEM_HEALTH.md",
+      "claims": 3,
+      "VERDADERO": 3,
+      "FALSO": 0,
+      "NO COMPROBABLE": 0
+    },
+    {
+      "document": "00_COMMAND_CENTER/TOOL_REGISTRY.md",
+      "claims": 5,
+      "VERDADERO": 5,
+      "FALSO": 0,
+      "NO COMPROBABLE": 0
+    },
+    {
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/CURRENT_STATE.md",
+      "claims": 5,
+      "VERDADERO": 5,
+      "FALSO": 0,
+      "NO COMPROBABLE": 0
+    },
+    {
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/APPLE_SIGNIN/README.md",
+      "claims": 4,
+      "VERDADERO": 4,
+      "FALSO": 0,
+      "NO COMPROBABLE": 0
+    },
+    {
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/CLOUDINARY/README.md",
+      "claims": 2,
+      "VERDADERO": 2,
+      "FALSO": 0,
+      "NO COMPROBABLE": 0
+    },
+    {
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/CULQI/README.md",
+      "claims": 1,
+      "VERDADERO": 1,
+      "FALSO": 0,
+      "NO COMPROBABLE": 0
+    },
+    {
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EMAIL_SOPORTE/README.md",
+      "claims": 3,
+      "VERDADERO": 3,
+      "FALSO": 0,
+      "NO COMPROBABLE": 0
+    },
+    {
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EXPO_EAS/README.md",
+      "claims": 5,
+      "VERDADERO": 5,
+      "FALSO": 0,
+      "NO COMPROBABLE": 0
+    },
+    {
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/FIREBASE/README.md",
+      "claims": 4,
+      "VERDADERO": 4,
+      "FALSO": 0,
+      "NO COMPROBABLE": 0
+    },
+    {
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md",
+      "claims": 4,
+      "VERDADERO": 3,
+      "FALSO": 0,
+      "NO COMPROBABLE": 1
+    },
+    {
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/MERCADO_PAGO/README.md",
+      "claims": 2,
+      "VERDADERO": 2,
+      "FALSO": 0,
+      "NO COMPROBABLE": 0
+    },
+    {
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/NUBEFACT/README.md",
+      "claims": 1,
+      "VERDADERO": 1,
+      "FALSO": 0,
+      "NO COMPROBABLE": 0
+    },
+    {
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTGRES_REDIS/README.md",
+      "claims": 6,
+      "VERDADERO": 6,
+      "FALSO": 0,
+      "NO COMPROBABLE": 0
+    },
+    {
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTHOG/README.md",
+      "claims": 2,
+      "VERDADERO": 2,
+      "FALSO": 0,
+      "NO COMPROBABLE": 0
+    },
+    {
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+      "claims": 8,
+      "VERDADERO": 8,
+      "FALSO": 0,
+      "NO COMPROBABLE": 0
+    },
+    {
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/README.md",
+      "claims": 1,
+      "VERDADERO": 1,
+      "FALSO": 0,
+      "NO COMPROBABLE": 0
+    },
+    {
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RESEND/README.md",
+      "claims": 2,
+      "VERDADERO": 2,
+      "FALSO": 0,
+      "NO COMPROBABLE": 0
+    },
+    {
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/SENTRY/README.md",
+      "claims": 2,
+      "VERDADERO": 2,
+      "FALSO": 0,
+      "NO COMPROBABLE": 0
+    },
+    {
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/TRUORA/README.md",
+      "claims": 1,
+      "VERDADERO": 1,
+      "FALSO": 0,
+      "NO COMPROBABLE": 0
+    },
+    {
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md",
+      "claims": 8,
+      "VERDADERO": 8,
+      "FALSO": 0,
+      "NO COMPROBABLE": 0
+    },
+    {
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+      "claims": 14,
+      "VERDADERO": 13,
+      "FALSO": 0,
+      "NO COMPROBABLE": 1
+    },
+    {
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/OPS/INCIDENTES.md",
+      "claims": 0,
+      "VERDADERO": 0,
+      "FALSO": 0,
+      "NO COMPROBABLE": 0
+    }
+  ],
+  "results": [
+    {
+      "id": "framework_state.ollama_port",
+      "document": "00_COMMAND_CENTER/CURRENT_STATE.md",
+      "claim": "Ollama está activo en el puerto 11435",
+      "check": "ollama_via_router",
+      "status": "VERDADERO",
+      "observed": 11435,
+      "evidence": "Ollama port via contenedor del router"
+    },
+    {
+      "id": "framework_state.ollama_version",
+      "document": "00_COMMAND_CENTER/CURRENT_STATE.md",
+      "claim": "La versión activa de Ollama es 0.32.9",
+      "check": "ollama_via_router",
+      "status": "VERDADERO",
+      "observed": "0.32.9",
+      "evidence": "Ollama version via contenedor del router"
+    },
+    {
+      "id": "framework_state.ollama_model",
+      "document": "00_COMMAND_CENTER/CURRENT_STATE.md",
+      "claim": "qwen2.5-coder:7b está instalado en Ollama",
+      "check": "ollama_via_router",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "GET /v1/models via contenedor del router"
+    },
+    {
+      "id": "framework_state.anythingllm_port",
+      "document": "00_COMMAND_CENTER/CURRENT_STATE.md",
+      "claim": "AnythingLLM publica el puerto 3110",
+      "check": "docker_published_port",
+      "status": "VERDADERO",
+      "observed": [
+        3110
+      ],
+      "evidence": "puertos publicados por anythingllm-localai"
+    },
+    {
+      "id": "framework_state.tchasky_repo",
+      "document": "00_COMMAND_CENTER/CURRENT_STATE.md",
+      "claim": "El repositorio real de Tchasky existe en WSL",
+      "check": "path_exists",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "ruta dir: <HOME>/<PRIVATE_PROJECT>"
+    },
+    {
+      "id": "system_health.ollama_version",
+      "document": "00_COMMAND_CENTER/SYSTEM_HEALTH.md",
+      "claim": "Ollama reporta la versión 0.32.9",
+      "check": "ollama_via_router",
+      "status": "VERDADERO",
+      "observed": "0.32.9",
+      "evidence": "Ollama version via contenedor del router"
+    },
+    {
+      "id": "system_health.anythingllm_running",
+      "document": "00_COMMAND_CENTER/SYSTEM_HEALTH.md",
+      "claim": "AnythingLLM está activo",
+      "check": "docker_running",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "estado Docker de anythingllm-localai"
+    },
+    {
+      "id": "system_health.lm_studio_free",
+      "document": "00_COMMAND_CENTER/SYSTEM_HEALTH.md",
+      "claim": "El puerto 1234 de LM Studio está libre",
+      "check": "tcp_port",
+      "status": "VERDADERO",
+      "observed": false,
+      "evidence": "conexion TCP 127.0.0.1:1234"
+    },
+    {
+      "id": "tool_registry.tchasky_repo",
+      "document": "00_COMMAND_CENTER/TOOL_REGISTRY.md",
+      "claim": "El monorepo real de Tchasky existe",
+      "check": "path_exists",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "ruta dir: <HOME>/<PRIVATE_PROJECT>"
+    },
+    {
+      "id": "tool_registry.postgres_running",
+      "document": "00_COMMAND_CENTER/TOOL_REGISTRY.md",
+      "claim": "lifeos_postgres está activo",
+      "check": "docker_running",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "estado Docker de lifeos_postgres"
+    },
+    {
+      "id": "tool_registry.redis_running",
+      "document": "00_COMMAND_CENTER/TOOL_REGISTRY.md",
+      "claim": "lifeos_redis está activo",
+      "check": "docker_running",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "estado Docker de lifeos_redis"
+    },
+    {
+      "id": "tool_registry.ollama_port",
+      "document": "00_COMMAND_CENTER/TOOL_REGISTRY.md",
+      "claim": "Ollama usa el puerto 11435",
+      "check": "ollama_via_router",
+      "status": "VERDADERO",
+      "observed": 11435,
+      "evidence": "Ollama port via contenedor del router"
+    },
+    {
+      "id": "tool_registry.anythingllm_port",
+      "document": "00_COMMAND_CENTER/TOOL_REGISTRY.md",
+      "claim": "AnythingLLM usa el puerto 3110",
+      "check": "docker_published_port",
+      "status": "VERDADERO",
+      "observed": [
+        3110
+      ],
+      "evidence": "puertos publicados por anythingllm-localai"
+    },
+    {
+      "id": "tchasky_state.repo",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/CURRENT_STATE.md",
+      "claim": "El monorepo real existe en WSL",
+      "check": "path_exists",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "ruta dir: <HOME>/<PRIVATE_PROJECT>"
+    },
+    {
+      "id": "tchasky_state.api_port",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/CURRENT_STATE.md",
+      "claim": "La API local escucha en el puerto 3001",
+      "check": "tcp_port",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "conexion TCP 127.0.0.1:3001"
+    },
+    {
+      "id": "tchasky_state.web_port",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/CURRENT_STATE.md",
+      "claim": "El frontend local está configurado para usar el puerto 5173",
+      "check": "file_contains",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "contenido literal en <HOME>/<PRIVATE_PROJECT>/apps/web/vite.config.ts"
+    },
+    {
+      "id": "tchasky_state.postgres_port",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/CURRENT_STATE.md",
+      "claim": "PostgreSQL local escucha en el puerto 5432",
+      "check": "tcp_port",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "conexion TCP 127.0.0.1:5432"
+    },
+    {
+      "id": "tchasky_state.redis_port",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/CURRENT_STATE.md",
+      "claim": "Redis local escucha en el puerto 6379",
+      "check": "tcp_port",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "conexion TCP 127.0.0.1:6379"
+    },
+    {
+      "id": "apple.bundle_ios",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/APPLE_SIGNIN/README.md",
+      "claim": "El Bundle ID de iOS es com.tchasky.mobile",
+      "check": "json_value",
+      "status": "VERDADERO",
+      "observed": "com.tchasky.mobile",
+      "evidence": "valor JSON en <HOME>/<PRIVATE_PROJECT>/apps/mobile/app.json"
+    },
+    {
+      "id": "apple.package_android",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/APPLE_SIGNIN/README.md",
+      "claim": "El paquete Android es com.tchasky.mobile",
+      "check": "json_value",
+      "status": "VERDADERO",
+      "observed": "com.tchasky.mobile",
+      "evidence": "valor JSON en <HOME>/<PRIVATE_PROJECT>/apps/mobile/app.json"
+    },
+    {
+      "id": "apple.team_id",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/APPLE_SIGNIN/README.md",
+      "claim": "El Apple Team ID de envío es GXG7A8VTGW",
+      "check": "json_value",
+      "status": "VERDADERO",
+      "observed": "GXG7A8VTGW",
+      "evidence": "valor JSON en <HOME>/<PRIVATE_PROJECT>/apps/mobile/eas.json"
+    },
+    {
+      "id": "apple.vercel_services_id",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/APPLE_SIGNIN/README.md",
+      "claim": "Vercel producción y preview tienen VITE_APPLE_SERVICES_ID=com.tchasky.mobile.web",
+      "check": "vercel_env",
+      "status": "VERDADERO",
+      "observed": {
+        "entries": 1,
+        "targets": [
+          "preview",
+          "production"
+        ],
+        "matching_targets": [
+          "preview",
+          "production"
+        ],
+        "value_matches": true
+      },
+      "evidence": "variable VITE_APPLE_SERVICES_ID en Vercel; VERCEL_TOKEN existente en <HOME>/.vercel_credentials; valor oculto; valores sensibles ocultos"
+    },
+    {
+      "id": "cloudinary.local_credentials",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/CLOUDINARY/README.md",
+      "claim": "Las tres variables de Cloudinary están configuradas en el backend local",
+      "check": "dotenv_keys",
+      "status": "VERDADERO",
+      "observed": {
+        "configured": 3,
+        "missing": []
+      },
+      "evidence": "nombres de variables en <HOME>/<PRIVATE_PROJECT>/apps/api/.env; valores ocultos"
+    },
+    {
+      "id": "cloudinary.active_credentials",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/CLOUDINARY/README.md",
+      "claim": "Las credenciales locales de Cloudinary siguen activas",
+      "check": "cloudinary_credentials",
+      "status": "VERDADERO",
+      "observed": "ok",
+      "evidence": "Cloudinary /ping; credenciales activas, valores ocultos"
+    },
+    {
+      "id": "culqi.local_credentials",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/CULQI/README.md",
+      "claim": "Las credenciales de Culqi están configuradas en el backend local",
+      "check": "dotenv_keys",
+      "status": "VERDADERO",
+      "observed": {
+        "configured": 4,
+        "missing": []
+      },
+      "evidence": "nombres de variables en <HOME>/<PRIVATE_PROJECT>/apps/api/.env; valores ocultos"
+    },
+    {
+      "id": "support_email.mx1",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EMAIL_SOPORTE/README.md",
+      "claim": "tchasky.pe publica MX 10 mx1.improvmx.com",
+      "check": "doh_record",
+      "status": "VERDADERO",
+      "observed": [
+        "20 mx2.improvmx.com",
+        "10 mx1.improvmx.com"
+      ],
+      "evidence": "DNS MX de tchasky.pe"
+    },
+    {
+      "id": "support_email.mx2",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EMAIL_SOPORTE/README.md",
+      "claim": "tchasky.pe publica MX 20 mx2.improvmx.com",
+      "check": "doh_record",
+      "status": "VERDADERO",
+      "observed": [
+        "20 mx2.improvmx.com",
+        "10 mx1.improvmx.com"
+      ],
+      "evidence": "DNS MX de tchasky.pe"
+    },
+    {
+      "id": "support_email.spf",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EMAIL_SOPORTE/README.md",
+      "claim": "tchasky.pe publica el SPF de ImprovMX documentado",
+      "check": "doh_record",
+      "status": "VERDADERO",
+      "observed": [
+        "v=spf1 include:spf.improvmx.com ~all"
+      ],
+      "evidence": "DNS TXT de tchasky.pe"
+    },
+    {
+      "id": "expo.token_active",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EXPO_EAS/README.md",
+      "claim": "El EXPO_TOKEN local autentica contra Expo",
+      "check": "expo_token_active",
+      "status": "VERDADERO",
+      "observed": {
+        "active": true,
+        "type": "Robot"
+      },
+      "evidence": "Expo GraphQL; token activo, valor oculto"
+    },
+    {
+      "id": "expo.bundle_ios",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EXPO_EAS/README.md",
+      "claim": "El Bundle ID de iOS es com.tchasky.mobile",
+      "check": "json_value",
+      "status": "VERDADERO",
+      "observed": "com.tchasky.mobile",
+      "evidence": "valor JSON en <HOME>/<PRIVATE_PROJECT>/apps/mobile/app.json"
+    },
+    {
+      "id": "expo.package_android",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EXPO_EAS/README.md",
+      "claim": "El paquete Android es com.tchasky.mobile",
+      "check": "json_value",
+      "status": "VERDADERO",
+      "observed": "com.tchasky.mobile",
+      "evidence": "valor JSON en <HOME>/<PRIVATE_PROJECT>/apps/mobile/app.json"
+    },
+    {
+      "id": "expo.apple_team",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EXPO_EAS/README.md",
+      "claim": "El Apple Team ID de EAS es GXG7A8VTGW",
+      "check": "json_value",
+      "status": "VERDADERO",
+      "observed": "GXG7A8VTGW",
+      "evidence": "valor JSON en <HOME>/<PRIVATE_PROJECT>/apps/mobile/eas.json"
+    },
+    {
+      "id": "expo.credentials_mode",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EXPO_EAS/README.md",
+      "claim": "El archivo local de credenciales Expo tiene permisos 600",
+      "check": "file_mode",
+      "status": "VERDADERO",
+      "observed": "0o600",
+      "evidence": "permisos de <HOME>/.expo_credentials"
+    },
+    {
+      "id": "firebase.project_id",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/FIREBASE/README.md",
+      "claim": "El Project ID de Firebase es gen-lang-client-0932571499",
+      "check": "json_value",
+      "status": "VERDADERO",
+      "observed": "gen-lang-client-0932571499",
+      "evidence": "valor JSON en <HOME>/<PRIVATE_PROJECT>/apps/mobile/google-services.json"
+    },
+    {
+      "id": "firebase.project_number",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/FIREBASE/README.md",
+      "claim": "El número de proyecto Firebase es 1083143160929",
+      "check": "json_value",
+      "status": "VERDADERO",
+      "observed": "1083143160929",
+      "evidence": "valor JSON en <HOME>/<PRIVATE_PROJECT>/apps/mobile/google-services.json"
+    },
+    {
+      "id": "firebase.android_app_id",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/FIREBASE/README.md",
+      "claim": "El App ID Android es 1:1083143160929:android:06eaa94f0092d8772a1620",
+      "check": "json_value",
+      "status": "VERDADERO",
+      "observed": "1:1083143160929:android:06eaa94f0092d8772a1620",
+      "evidence": "valor JSON en <HOME>/<PRIVATE_PROJECT>/apps/mobile/google-services.json"
+    },
+    {
+      "id": "firebase.android_package",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/FIREBASE/README.md",
+      "claim": "La app Firebase Android usa com.tchasky.mobile",
+      "check": "json_value",
+      "status": "VERDADERO",
+      "observed": "com.tchasky.mobile",
+      "evidence": "valor JSON en <HOME>/<PRIVATE_PROJECT>/apps/mobile/google-services.json"
+    },
+    {
+      "id": "google_oauth.web_client",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md",
+      "claim": "El SDK móvil usa el Client ID web documentado",
+      "check": "file_contains",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "contenido literal en <HOME>/<PRIVATE_PROJECT>/apps/mobile/src/lib/google-signin.ts"
+    },
+    {
+      "id": "google_oauth.ios_client",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md",
+      "claim": "El SDK móvil usa el Client ID iOS documentado",
+      "check": "file_contains",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "contenido literal en <HOME>/<PRIVATE_PROJECT>/apps/mobile/src/lib/google-signin.ts"
+    },
+    {
+      "id": "google_oauth.upload_sha1",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md",
+      "claim": "google-services.json contiene el SHA-1 de la llave de subida 8E:FD:B8:70:02:94:46:0B:E5:6E:11:FD:9E:4D:41:F0:3A:A2:77:99",
+      "check": "file_contains",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "contenido literal en <HOME>/<PRIVATE_PROJECT>/apps/mobile/google-services.json"
+    },
+    {
+      "id": "google_oauth.play_sha1",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md",
+      "claim": "El APK que Play entrega al teléfono está firmado con SHA-1 EF:13:86:2E:C1:0C:45:71:EE:98:0F:0F:11:CF:4E:EB:78:AF:FF:1F",
+      "check": "apk_certificate_sha1",
+      "status": "NO COMPROBABLE",
+      "observed": null,
+      "evidence": "defina TASK123_PLAY_APK con el APK extraido del telefono"
+    },
+    {
+      "id": "mercado_pago.local_credentials",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/MERCADO_PAGO/README.md",
+      "claim": "Las credenciales de Mercado Pago están configuradas en el backend local",
+      "check": "dotenv_keys",
+      "status": "VERDADERO",
+      "observed": {
+        "configured": 3,
+        "missing": []
+      },
+      "evidence": "nombres de variables en <HOME>/<PRIVATE_PROJECT>/apps/api/.env; valores ocultos"
+    },
+    {
+      "id": "mercado_pago.active_token",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/MERCADO_PAGO/README.md",
+      "claim": "MP_ACCESS_TOKEN sigue activo",
+      "check": "bearer_api_active",
+      "status": "VERDADERO",
+      "observed": "active",
+      "evidence": "API api.mercadopago.com; credencial activa, valor oculto"
+    },
+    {
+      "id": "nubefact.no_credentials",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/NUBEFACT/README.md",
+      "claim": "No hay credenciales de Nubefact configuradas en el backend local",
+      "check": "dotenv_keys_absent",
+      "status": "VERDADERO",
+      "observed": {
+        "present": []
+      },
+      "evidence": "ausencia de variables en <HOME>/<PRIVATE_PROJECT>/apps/api/.env; valores ocultos"
+    },
+    {
+      "id": "postgres_redis.api_port",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTGRES_REDIS/README.md",
+      "claim": "La API del worktree principal escucha en el puerto 3001",
+      "check": "tcp_port",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "conexion TCP 127.0.0.1:3001"
+    },
+    {
+      "id": "postgres_redis.postgres_running",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTGRES_REDIS/README.md",
+      "claim": "El PostgreSQL local de Tchasky está activo",
+      "check": "docker_running",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "estado Docker de lifeos_postgres"
+    },
+    {
+      "id": "postgres_redis.redis_running",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTGRES_REDIS/README.md",
+      "claim": "El Redis local de Tchasky está activo",
+      "check": "docker_running",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "estado Docker de lifeos_redis"
+    },
+    {
+      "id": "postgres_redis.postgres_port",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTGRES_REDIS/README.md",
+      "claim": "PostgreSQL local escucha en el puerto 5432",
+      "check": "tcp_port",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "conexion TCP 127.0.0.1:5432"
+    },
+    {
+      "id": "postgres_redis.redis_port",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTGRES_REDIS/README.md",
+      "claim": "Redis local escucha en el puerto 6379",
+      "check": "tcp_port",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "conexion TCP 127.0.0.1:6379"
+    },
+    {
+      "id": "postgres_redis.eviction_policy",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTGRES_REDIS/README.md",
+      "claim": "Redis local usa maxmemory-policy noeviction",
+      "check": "redis_config",
+      "status": "VERDADERO",
+      "observed": "noeviction",
+      "evidence": "Redis CONFIG GET maxmemory-policy; credencial oculta"
+    },
+    {
+      "id": "posthog.vercel_key",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTHOG/README.md",
+      "claim": "Vercel producción y preview usan la Project API Key documentada de PostHog",
+      "check": "vercel_env",
+      "status": "VERDADERO",
+      "observed": {
+        "entries": 1,
+        "targets": [
+          "preview",
+          "production"
+        ],
+        "matching_targets": [
+          "preview",
+          "production"
+        ],
+        "value_matches": true
+      },
+      "evidence": "variable VITE_POSTHOG_KEY en Vercel; VERCEL_TOKEN existente en <HOME>/.vercel_credentials; valor oculto; valores sensibles ocultos"
+    },
+    {
+      "id": "posthog.vercel_host",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTHOG/README.md",
+      "claim": "Vercel producción y preview usan https://us.i.posthog.com",
+      "check": "vercel_env",
+      "status": "VERDADERO",
+      "observed": {
+        "entries": 1,
+        "targets": [
+          "preview",
+          "production"
+        ],
+        "matching_targets": [
+          "preview",
+          "production"
+        ],
+        "value_matches": true
+      },
+      "evidence": "variable VITE_POSTHOG_HOST en Vercel; VERCEL_TOKEN existente en <HOME>/.vercel_credentials; valor oculto; valores sensibles ocultos"
+    },
+    {
+      "id": "railway.project",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+      "claim": "La credencial activa accede al proyecto bb980d52-a858-4953-b422-93aba12acc5f llamado tchasky-backend",
+      "check": "railway_project",
+      "status": "VERDADERO",
+      "observed": {
+        "project_id": "bb980d52-a858-4953-b422-93aba12acc5f",
+        "project_name": "tchasky-backend"
+      },
+      "evidence": "Railway GraphQL; RAILWAY_TOKEN existente en <HOME>/.railway_credentials; valor oculto"
+    },
+    {
+      "id": "railway.service",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+      "claim": "El servicio API de Railway tiene ID 010a4bfe-937a-43b0-8618-82d128d7c441",
+      "check": "railway_project",
+      "status": "VERDADERO",
+      "observed": {
+        "project_id": "bb980d52-a858-4953-b422-93aba12acc5f",
+        "project_name": "tchasky-backend",
+        "service_ids": [
+          "010a4bfe-937a-43b0-8618-82d128d7c441",
+          "19289f33-1eab-4952-ac84-0d358f67aeba",
+          "3b1a8a8f-6b79-4def-9652-a0b23ecdfc6c",
+          "71334377-1262-4062-8fce-9ee5a48540a0",
+          "775e1579-5365-4c07-a49b-ede1330b6907",
+          "95d40e10-322f-443f-9363-a43bf2866f5e",
+          "e012cae5-87da-48e5-93a7-ef050c802969"
+        ]
+      },
+      "evidence": "Railway GraphQL; RAILWAY_TOKEN existente en <HOME>/.railway_credentials; valor oculto"
+    },
+    {
+      "id": "railway.environment",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+      "claim": "El entorno production de Railway tiene ID 26e490d9-1c59-4096-bf1e-c260302afa2d",
+      "check": "railway_project",
+      "status": "VERDADERO",
+      "observed": {
+        "project_id": "bb980d52-a858-4953-b422-93aba12acc5f",
+        "project_name": "tchasky-backend",
+        "environment_ids": [
+          "26e490d9-1c59-4096-bf1e-c260302afa2d"
+        ]
+      },
+      "evidence": "Railway GraphQL; RAILWAY_TOKEN existente en <HOME>/.railway_credentials; valor oculto"
+    },
+    {
+      "id": "railway.health",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+      "claim": "La API productiva responde status=ok y env=production",
+      "check": "http_json",
+      "status": "VERDADERO",
+      "observed": "ok",
+      "evidence": "GET api-production-d886.up.railway.app"
+    },
+    {
+      "id": "railway.start_without_migrate",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+      "claim": "El script start del backend arranca Node sin ejecutar migraciones",
+      "check": "json_value",
+      "status": "VERDADERO",
+      "observed": "node dist/apps/api/src/index.js",
+      "evidence": "valor JSON en <HOME>/<PRIVATE_PROJECT>/apps/api/package.json"
+    },
+    {
+      "id": "railway.production_builder",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+      "claim": "El builder activo de producción es DOCKERFILE",
+      "check": "railway_deployment_meta",
+      "status": "VERDADERO",
+      "observed": "DOCKERFILE",
+      "evidence": "metadatos del deployment Railway dd7bab6f-5637-4445-9568-f628185075f2 (SUCCESS); RAILWAY_TOKEN existente en <HOME>/.railway_credentials; valor oculto"
+    },
+    {
+      "id": "railway.production_dockerfile",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+      "claim": "El deployment de producción usa dockerfilePath=Dockerfile",
+      "check": "railway_deployment_meta",
+      "status": "VERDADERO",
+      "observed": "Dockerfile",
+      "evidence": "metadatos del deployment Railway dd7bab6f-5637-4445-9568-f628185075f2 (SUCCESS); RAILWAY_TOKEN existente en <HOME>/.railway_credentials; valor oculto"
+    },
+    {
+      "id": "railway.production_no_predeploy_migration",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+      "claim": "El deployment de producción ejecuta la migración antes del despliegue",
+      "check": "railway_deployment_meta",
+      "status": "VERDADERO",
+      "observed": [
+        "sh -lc 'pnpm --filter api db:migrate'"
+      ],
+      "evidence": "metadatos del deployment Railway dd7bab6f-5637-4445-9568-f628185075f2 (SUCCESS); RAILWAY_TOKEN existente en <HOME>/.railway_credentials; valor oculto"
+    },
+    {
+      "id": "deploy_map.provider_documents",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/README.md",
+      "claim": "Los catorce documentos de proveedor enlazados por el mapa existen",
+      "check": "paths_exist",
+      "status": "VERDADERO",
+      "observed": {
+        "total": 14,
+        "missing": []
+      },
+      "evidence": "existencia de rutas"
+    },
+    {
+      "id": "resend.local_credentials",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RESEND/README.md",
+      "claim": "RESEND_API_KEY está configurada en el backend local",
+      "check": "dotenv_keys",
+      "status": "VERDADERO",
+      "observed": {
+        "configured": 1,
+        "missing": []
+      },
+      "evidence": "nombres de variables en <HOME>/<PRIVATE_PROJECT>/apps/api/.env; valores ocultos"
+    },
+    {
+      "id": "resend.active_key",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RESEND/README.md",
+      "claim": "RESEND_API_KEY sigue activa",
+      "check": "bearer_api_active",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "API api.resend.com; credencial activa, valor oculto"
+    },
+    {
+      "id": "sentry.local_dsn",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/SENTRY/README.md",
+      "claim": "SENTRY_DSN está configurado en el backend local",
+      "check": "dotenv_keys",
+      "status": "VERDADERO",
+      "observed": {
+        "configured": 1,
+        "missing": []
+      },
+      "evidence": "nombres de variables en <HOME>/<PRIVATE_PROJECT>/apps/api/.env; valores ocultos"
+    },
+    {
+      "id": "sentry.vercel_dsn",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/SENTRY/README.md",
+      "claim": "VITE_SENTRY_DSN está configurado en Vercel para producción y preview",
+      "check": "vercel_env",
+      "status": "VERDADERO",
+      "observed": {
+        "entries": 1,
+        "targets": [
+          "preview",
+          "production"
+        ],
+        "matching_targets": [
+          "preview",
+          "production"
+        ],
+        "value_matches": true
+      },
+      "evidence": "variable VITE_SENTRY_DSN en Vercel; VERCEL_TOKEN existente en <HOME>/.vercel_credentials; valor oculto; valores sensibles ocultos"
+    },
+    {
+      "id": "truora.no_credentials",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/TRUORA/README.md",
+      "claim": "No hay credenciales de Truora configuradas en el backend local",
+      "check": "dotenv_keys_absent",
+      "status": "VERDADERO",
+      "observed": {
+        "present": []
+      },
+      "evidence": "ausencia de variables en <HOME>/<PRIVATE_PROJECT>/apps/api/.env; valores ocultos"
+    },
+    {
+      "id": "vercel.project",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md",
+      "claim": "La credencial activa accede al proyecto prj_q8f85BuPB6TG8x5BdwmLa86ja2Yi llamado tchasky-web",
+      "check": "vercel_project",
+      "status": "VERDADERO",
+      "observed": {
+        "id": "prj_q8f85BuPB6TG8x5BdwmLa86ja2Yi",
+        "name": "tchasky-web"
+      },
+      "evidence": "Vercel REST; VERCEL_TOKEN existente en <HOME>/.vercel_credentials; valor oculto"
+    },
+    {
+      "id": "vercel.api_url",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md",
+      "claim": "Vercel production usa VITE_API_URL=https://api-production-d886.up.railway.app/api/v1",
+      "check": "vercel_env",
+      "status": "VERDADERO",
+      "observed": {
+        "entries": 2,
+        "targets": [
+          "preview",
+          "production"
+        ],
+        "matching_targets": [
+          "production"
+        ],
+        "value_matches": true
+      },
+      "evidence": "variable VITE_API_URL en Vercel; VERCEL_TOKEN existente en <HOME>/.vercel_credentials; valor oculto; valores sensibles ocultos"
+    },
+    {
+      "id": "vercel.api_url_preview",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md",
+      "claim": "Vercel preview usa VITE_API_URL=https://api-staging-staging-b07d.up.railway.app/api/v1",
+      "check": "vercel_env",
+      "status": "VERDADERO",
+      "observed": {
+        "entries": 2,
+        "targets": [
+          "preview",
+          "production"
+        ],
+        "matching_targets": [
+          "preview"
+        ],
+        "value_matches": true
+      },
+      "evidence": "variable VITE_API_URL en Vercel; VERCEL_TOKEN existente en <HOME>/.vercel_credentials; valor oculto; valores sensibles ocultos"
+    },
+    {
+      "id": "vercel.google_client",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md",
+      "claim": "Vercel producción y preview usan el Client ID web documentado",
+      "check": "vercel_env",
+      "status": "VERDADERO",
+      "observed": {
+        "entries": 1,
+        "targets": [
+          "preview",
+          "production"
+        ],
+        "matching_targets": [
+          "preview",
+          "production"
+        ],
+        "value_matches": true
+      },
+      "evidence": "variable VITE_GOOGLE_CLIENT_ID en Vercel; VERCEL_TOKEN existente en <HOME>/.vercel_credentials; valor oculto; valores sensibles ocultos"
+    },
+    {
+      "id": "vercel.posthog_key",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md",
+      "claim": "Vercel producción y preview usan la Project API Key documentada de PostHog",
+      "check": "vercel_env",
+      "status": "VERDADERO",
+      "observed": {
+        "entries": 1,
+        "targets": [
+          "preview",
+          "production"
+        ],
+        "matching_targets": [
+          "preview",
+          "production"
+        ],
+        "value_matches": true
+      },
+      "evidence": "variable VITE_POSTHOG_KEY en Vercel; VERCEL_TOKEN existente en <HOME>/.vercel_credentials; valor oculto; valores sensibles ocultos"
+    },
+    {
+      "id": "vercel.posthog_host",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md",
+      "claim": "Vercel producción y preview usan https://us.i.posthog.com",
+      "check": "vercel_env",
+      "status": "VERDADERO",
+      "observed": {
+        "entries": 1,
+        "targets": [
+          "preview",
+          "production"
+        ],
+        "matching_targets": [
+          "preview",
+          "production"
+        ],
+        "value_matches": true
+      },
+      "evidence": "variable VITE_POSTHOG_HOST en Vercel; VERCEL_TOKEN existente en <HOME>/.vercel_credentials; valor oculto; valores sensibles ocultos"
+    },
+    {
+      "id": "vercel.apple_services",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md",
+      "claim": "Vercel producción y preview usan VITE_APPLE_SERVICES_ID=com.tchasky.mobile.web",
+      "check": "vercel_env",
+      "status": "VERDADERO",
+      "observed": {
+        "entries": 1,
+        "targets": [
+          "preview",
+          "production"
+        ],
+        "matching_targets": [
+          "preview",
+          "production"
+        ],
+        "value_matches": true
+      },
+      "evidence": "variable VITE_APPLE_SERVICES_ID en Vercel; VERCEL_TOKEN existente en <HOME>/.vercel_credentials; valor oculto; valores sensibles ocultos"
+    },
+    {
+      "id": "vercel.build_command",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md",
+      "claim": "vercel.json construye el workspace web con pnpm --filter web build",
+      "check": "json_value",
+      "status": "VERDADERO",
+      "observed": "pnpm --filter web build",
+      "evidence": "valor JSON en <HOME>/<PRIVATE_PROJECT>/vercel.json"
+    },
+    {
+      "id": "identifiers.live_branch",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+      "claim": "La rama local viva del producto es feature/mobile-foundation",
+      "check": "git_current_branch",
+      "status": "VERDADERO",
+      "observed": "feature/mobile-foundation",
+      "evidence": "git branch --show-current en <HOME>/<PRIVATE_PROJECT>"
+    },
+    {
+      "id": "identifiers.remote_branch",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+      "claim": "La rama feature/mobile-foundation existe en origin",
+      "check": "git_ref_exists",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "git show-ref refs/remotes/origin/feature/mobile-foundation"
+    },
+    {
+      "id": "identifiers.production_branch",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+      "claim": "El deployment de producción proviene de feature/mobile-foundation",
+      "check": "railway_deployment_meta",
+      "status": "NO COMPROBABLE",
+      "observed": null,
+      "evidence": "el deployment dd7bab6f-5637-4445-9568-f628185075f2 no expone meta.branch; RAILWAY_TOKEN existente en <HOME>/.railway_credentials; valor oculto"
+    },
+    {
+      "id": "identifiers.framework_origin",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+      "claim": "github-limpio y origin/main del framework coinciden en 4069bba",
+      "check": "git_refs_equal",
+      "status": "VERDADERO",
+      "observed": {
+        "github-limpio": "4069bbabc633",
+        "origin/main": "4069bbabc633"
+      },
+      "evidence": "git rev-parse de github-limpio, origin/main"
+    },
+    {
+      "id": "identifiers.commit_4592f5c",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+      "claim": "El commit 4592f5c existe en el repositorio Tchasky",
+      "check": "git_commit_exists",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "git cat-file 4592f5c"
+    },
+    {
+      "id": "identifiers.commit_89af00e",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+      "claim": "El commit 89af00e existe en el repositorio Tchasky",
+      "check": "git_commit_exists",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "git cat-file 89af00e"
+    },
+    {
+      "id": "identifiers.commit_1095387",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+      "claim": "El commit 1095387 existe en el repositorio Tchasky",
+      "check": "git_commit_exists",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "git cat-file 1095387"
+    },
+    {
+      "id": "identifiers.migration_file_0080",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+      "claim": "Existe la migración 0080_palette_preferences_and_founding_member.sql",
+      "check": "path_exists",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "ruta file: <HOME>/<PRIVATE_PROJECT>/apps/api/src/db/migrations/0080_palette_preferences_and_founding_member.sql"
+    },
+    {
+      "id": "identifiers.migration_columns_0080",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+      "claim": "La base local tiene users.is_founding_member y users.palette",
+      "check": "postgres_rows",
+      "status": "VERDADERO",
+      "observed": [
+        "is_founding_member",
+        "palette"
+      ],
+      "evidence": "consulta PostgreSQL de solo lectura en lifeos_postgres"
+    },
+    {
+      "id": "identifiers.migration_applied_0080",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+      "claim": "La base local registra 0080_palette_preferences_and_founding_member.sql como aplicada",
+      "check": "postgres_rows",
+      "status": "VERDADERO",
+      "observed": [
+        "0080_palette_preferences_and_founding_member.sql"
+      ],
+      "evidence": "consulta PostgreSQL de solo lectura en lifeos_postgres"
+    },
+    {
+      "id": "identifiers.put_settings_route",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+      "claim": "PUT /api/v1/me/settings vive en routes/notifications.ts",
+      "check": "file_contains",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "contenido literal en <HOME>/<PRIVATE_PROJECT>/apps/api/src/routes/notifications.ts"
+    },
+    {
+      "id": "identifiers.get_account_route",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+      "claim": "GET /api/v1/me/account existe en el backend",
+      "check": "file_contains",
+      "status": "VERDADERO",
+      "observed": true,
+      "evidence": "contenido literal en <HOME>/<PRIVATE_PROJECT>/apps/api/src/routes/account.ts"
+    },
+    {
+      "id": "identifiers.runtime_app_version",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+      "claim": "La versión de la aplicación móvil es 1.0.0",
+      "check": "json_value",
+      "status": "VERDADERO",
+      "observed": "1.0.0",
+      "evidence": "valor JSON en <HOME>/<PRIVATE_PROJECT>/apps/mobile/app.json"
+    },
+    {
+      "id": "identifiers.runtime_policy",
+      "document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+      "claim": "runtimeVersion usa la política appVersion",
+      "check": "json_value",
+      "status": "VERDADERO",
+      "observed": "appVersion",
+      "evidence": "valor JSON en <HOME>/<PRIVATE_PROJECT>/apps/mobile/app.json"
+    }
+  ]
+}

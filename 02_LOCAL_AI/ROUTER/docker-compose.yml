@@ -1,0 +1,22 @@
+services:
+  notes-llm-router:
+    build: .
+    container_name: anythingllm-router
+    restart: unless-stopped
+    environment:
+      ROUTER_GEMINI_KEY_FILE: /run/secrets/gemini_api_key
+      ROUTER_NVIDIA_KEY_FILE: /run/secrets/nvidia_api_key
+      ROUTER_OLLAMA_URL: http://host.docker.internal:11435/v1/chat/completions
+      # TASK-96: ganador del benchmark RAG local (<20 s, texto en content).
+      ROUTER_OLLAMA_MODEL: qwen2.5:3b-instruct
+      ROUTER_LOG_PATH: /var/log/notes-router/router.jsonl
+    volumes:
+      - <HOME>/.gemini_credentials:/run/secrets/gemini_api_key:ro
+      - <HOME>/.nvidia_credentials:/run/secrets/nvidia_api_key:ro
+      - ./logs:/var/log/notes-router
+    networks:
+      - anythingllm-router-net
+
+networks:
+  anythingllm-router-net:
+    external: true

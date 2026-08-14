@@ -1,0 +1,19 @@
+{
+  "schema": "task123-two-direction-test-v1",
+  "generated_at": "2026-08-14T17:10:16.862431+00:00",
+  "system_direction": {
+    "change": "git switch -c task123-system-drift en repositorio temporal aislado",
+    "document_modified_between_checks": false,
+    "before": "VERDADERO",
+    "after": "FALSO",
+    "passed": true
+  },
+  "document_direction": {
+    "change": "expected de grounds_to alterado a rama-documentada-incorrecta",
+    "system_branch": "main",
+    "after": "FALSO",
+    "passed": true
+  },
+  "passed": true,
+  "duration_ms": 27.328
+}

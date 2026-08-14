@@ -1,0 +1,66 @@
+{
+  "name": "AI Cluster Orchestrator Webhook",
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "ai-cluster-event",
+        "options": {}
+      },
+      "id": "e0a1b2c3-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+      "name": "Webhook Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8765/run/enqueue-task",
+        "sendHeaders": true,
+        "specifyHeaders": "keypair",
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"fromAgent\": \"n8n_event_watcher\",\n  \"toAgent\": \"claude\",\n  \"kind\": \"event_notification\",\n  \"title\": \"Webhook Event: \" + ($json.body.title || \"System Event Triggered\"),\n  \"bodyText\": $json.body.description || \"An automated event was received by n8n.\"\n}",
+        "options": {},
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-Runner-Token",
+              "value": "={{$env.AIW_N8N_RUNNER_TOKEN}}"
+            }
+          ]
+        }
+      },
+      "id": "f1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+      "name": "Enqueue Task to Bridge",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        520,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Webhook Trigger": {
+      "main": [
+        [
+          {
+            "node": "Enqueue Task to Bridge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

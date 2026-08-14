@@ -1,0 +1,880 @@
+{
+  "schema": "task124-evaluation-v1",
+  "generated_at": "2026-08-14T17:12:14+00:00",
+  "criterion": {
+    "live": "10/10 se enrutan a LIVE, se consultan en el momento y cada respuesta incluye fuente y marca de tiempo",
+    "negative": "5/5 se enrutan a RAG y realizan una consulta de solo lectura al RAG vigente",
+    "fallback": "Ante duda, falta de señal temporal o intención no soportada, la ruta es RAG"
+  },
+  "approved": true,
+  "summary": {
+    "patterns_correct": 15,
+    "patterns_total": 15,
+    "patterns_accuracy": 1.0,
+    "patterns_total_ms": 0.474,
+    "patterns_mean_ms": 0.032,
+    "live_passed": 10,
+    "live_total": 10,
+    "negative_rag_passed": 5,
+    "negative_rag_total": 5,
+    "duration_ms": 31553.412
+  },
+  "model_classifier": {
+    "executed": false,
+    "accuracy": null,
+    "improvement_over_patterns_percentage_points": null,
+    "maximum_possible_improvement_percentage_points": 0.0,
+    "reason": "Los patrones alcanzaron 15/15. Un modelo no puede mejorar la exactitud de este conjunto y añadiría la latencia que la tarea ordena evitar."
+  },
+  "classifications": [
+    {
+      "id": "L01",
+      "question": "¿Falló algo hoy en los servicios locales de Tchasky?",
+      "expected_route": "LIVE",
+      "expected_intent": "local_health",
+      "decision": {
+        "route": "LIVE",
+        "intent": "local_health",
+        "matched_live_signals": [
+          "fallo",
+          "hoy"
+        ],
+        "matched_documentary_signals": [],
+        "reason": "Coinciden una señal de actualidad y una fuente viva soportada."
+      },
+      "correct": true
+    },
+    {
+      "id": "L02",
+      "question": "¿Cuál es la rama actual del repositorio Tchasky?",
+      "expected_route": "LIVE",
+      "expected_intent": "git_branch",
+      "decision": {
+        "route": "LIVE",
+        "intent": "git_branch",
+        "matched_live_signals": [
+          "actual"
+        ],
+        "matched_documentary_signals": [],
+        "reason": "Coinciden una señal de actualidad y una fuente viva soportada."
+      },
+      "correct": true
+    },
+    {
+      "id": "L03",
+      "question": "¿Cuál es el último commit local ahora?",
+      "expected_route": "LIVE",
+      "expected_intent": "git_commit",
+      "decision": {
+        "route": "LIVE",
+        "intent": "git_commit",
+        "matched_live_signals": [
+          "ahora",
+          "ultimo"
+        ],
+        "matched_documentary_signals": [],
+        "reason": "Coinciden una señal de actualidad y una fuente viva soportada."
+      },
+      "correct": true
+    },
+    {
+      "id": "L04",
+      "question": "¿Está la API local escuchando ahora en el puerto 3001?",
+      "expected_route": "LIVE",
+      "expected_intent": "api_port",
+      "decision": {
+        "route": "LIVE",
+        "intent": "api_port",
+        "matched_live_signals": [
+          "ahora",
+          "escuchando"
+        ],
+        "matched_documentary_signals": [],
+        "reason": "Coinciden una señal de actualidad y una fuente viva soportada."
+      },
+      "correct": true
+    },
+    {
+      "id": "L05",
+      "question": "¿Está la web local activa hoy en el puerto 5173?",
+      "expected_route": "LIVE",
+      "expected_intent": "web_port",
+      "decision": {
+        "route": "LIVE",
+        "intent": "web_port",
+        "matched_live_signals": [
+          "activa",
+          "hoy"
+        ],
+        "matched_documentary_signals": [],
+        "reason": "Coinciden una señal de actualidad y una fuente viva soportada."
+      },
+      "correct": true
+    },
+    {
+      "id": "L06",
+      "question": "¿Postgres está disponible ahora y cuál es la última migración aplicada?",
+      "expected_route": "LIVE",
+      "expected_intent": "postgres",
+      "decision": {
+        "route": "LIVE",
+        "intent": "postgres",
+        "matched_live_signals": [
+          "ahora",
+          "disponible",
+          "ultima"
+        ],
+        "matched_documentary_signals": [],
+        "reason": "Coinciden una señal de actualidad y una fuente viva soportada."
+      },
+      "correct": true
+    },
+    {
+      "id": "L07",
+      "question": "¿Redis responde ahora y cuál es su política de expulsión actual?",
+      "expected_route": "LIVE",
+      "expected_intent": "redis",
+      "decision": {
+        "route": "LIVE",
+        "intent": "redis",
+        "matched_live_signals": [
+          "actual",
+          "ahora",
+          "responde"
+        ],
+        "matched_documentary_signals": [],
+        "reason": "Coinciden una señal de actualidad y una fuente viva soportada."
+      },
+      "correct": true
+    },
+    {
+      "id": "L08",
+      "question": "¿Qué versión de Ollama está activa ahora?",
+      "expected_route": "LIVE",
+      "expected_intent": "ollama",
+      "decision": {
+        "route": "LIVE",
+        "intent": "ollama",
+        "matched_live_signals": [
+          "activa",
+          "ahora"
+        ],
+        "matched_documentary_signals": [],
+        "reason": "Coinciden una señal de actualidad y una fuente viva soportada."
+      },
+      "correct": true
+    },
+    {
+      "id": "L09",
+      "question": "¿Cuál es el último despliegue de producción en Vercel?",
+      "expected_route": "LIVE",
+      "expected_intent": "vercel",
+      "decision": {
+        "route": "LIVE",
+        "intent": "vercel",
+        "matched_live_signals": [
+          "ultimo"
+        ],
+        "matched_documentary_signals": [],
+        "reason": "Coinciden una señal de actualidad y una fuente viva soportada."
+      },
+      "correct": true
+    },
+    {
+      "id": "L10",
+      "question": "¿Cuál es el estado actual del último despliegue de producción en Railway?",
+      "expected_route": "LIVE",
+      "expected_intent": "railway",
+      "decision": {
+        "route": "LIVE",
+        "intent": "railway",
+        "matched_live_signals": [
+          "actual",
+          "estado actual",
+          "ultimo"
+        ],
+        "matched_documentary_signals": [],
+        "reason": "Coinciden una señal de actualidad y una fuente viva soportada."
+      },
+      "correct": true
+    },
+    {
+      "id": "N01",
+      "question": "¿Por qué se eligieron Postgres y Redis para la arquitectura?",
+      "expected_route": "RAG",
+      "expected_intent": null,
+      "decision": {
+        "route": "RAG",
+        "intent": null,
+        "matched_live_signals": [],
+        "matched_documentary_signals": [
+          "arquitectura",
+          "por que"
+        ],
+        "reason": "La pregunta pide historia, decisión o arquitectura; prevalece RAG."
+      },
+      "correct": true
+    },
+    {
+      "id": "N02",
+      "question": "¿Qué decisión tomó el fundador sobre reparar afirmaciones falsas?",
+      "expected_route": "RAG",
+      "expected_intent": null,
+      "decision": {
+        "route": "RAG",
+        "intent": null,
+        "matched_live_signals": [],
+        "matched_documentary_signals": [
+          "decision"
+        ],
+        "reason": "La pregunta pide historia, decisión o arquitectura; prevalece RAG."
+      },
+      "correct": true
+    },
+    {
+      "id": "N03",
+      "question": "¿Cómo está diseñada la autenticación móvil?",
+      "expected_route": "RAG",
+      "expected_intent": null,
+      "decision": {
+        "route": "RAG",
+        "intent": null,
+        "matched_live_signals": [],
+        "matched_documentary_signals": [
+          "disenada"
+        ],
+        "reason": "La pregunta pide historia, decisión o arquitectura; prevalece RAG."
+      },
+      "correct": true
+    },
+    {
+      "id": "N04",
+      "question": "¿Qué ocurrió en el incidente de Culqi documentado?",
+      "expected_route": "RAG",
+      "expected_intent": null,
+      "decision": {
+        "route": "RAG",
+        "intent": null,
+        "matched_live_signals": [],
+        "matched_documentary_signals": [
+          "documentado",
+          "que ocurrio"
+        ],
+        "reason": "La pregunta pide historia, decisión o arquitectura; prevalece RAG."
+      },
+      "correct": true
+    },
+    {
+      "id": "N05",
+      "question": "¿Cuáles fueron los motivos históricos para separar la API y la web?",
+      "expected_route": "RAG",
+      "expected_intent": null,
+      "decision": {
+        "route": "RAG",
+        "intent": null,
+        "matched_live_signals": [],
+        "matched_documentary_signals": [
+          "historicos",
+          "motivos"
+        ],
+        "reason": "La pregunta pide historia, decisión o arquitectura; prevalece RAG."
+      },
+      "correct": true
+    }
+  ],
+  "conservative_probes": [
+    {
+      "question": "¿Cómo está diseñada actualmente la arquitectura de pagos?",
+      "decision": {
+        "route": "RAG",
+        "intent": null,
+        "matched_live_signals": [],
+        "matched_documentary_signals": [
+          "arquitectura",
+          "disenada"
+        ],
+        "reason": "La pregunta pide historia, decisión o arquitectura; prevalece RAG."
+      },
+      "passed": true
+    },
+    {
+      "question": "¿Qué está pasando?",
+      "decision": {
+        "route": "RAG",
+        "intent": null,
+        "matched_live_signals": [],
+        "matched_documentary_signals": [],
+        "reason": "No hay una señal inequívoca de estado actual; ante la duda se usa RAG."
+      },
+      "passed": true
+    },
+    {
+      "question": "¿Cuál era la versión histórica de Ollama?",
+      "decision": {
+        "route": "RAG",
+        "intent": null,
+        "matched_live_signals": [],
+        "matched_documentary_signals": [],
+        "reason": "No hay una señal inequívoca de estado actual; ante la duda se usa RAG."
+      },
+      "passed": true
+    }
+  ],
+  "live_results": [
+    {
+      "id": "L01",
+      "question": "¿Falló algo hoy en los servicios locales de Tchasky?",
+      "route": "LIVE",
+      "intent": "local_health",
+      "answer": {
+        "schema": "task124-answer-v1",
+        "question": "¿Falló algo hoy en los servicios locales de Tchasky?",
+        "routing": {
+          "route": "LIVE",
+          "intent": "local_health",
+          "matched_live_signals": [
+            "fallo",
+            "hoy"
+          ],
+          "matched_documentary_signals": [],
+          "reason": "Coinciden una señal de actualidad y una fuente viva soportada."
+        },
+        "answered_at": "2026-08-14T17:11:42+00:00",
+        "status": "ANSWERED",
+        "answer": "La sonda puntual no reconstruye todo el día, pero detecta una anomalía actual: api_3001_listening, web_5173_listening.",
+        "sources": [
+          {
+            "source": "socket TCP local",
+            "observed": {
+              "127.0.0.1:3001": false,
+              "127.0.0.1:5173": false
+            },
+            "collected_at": "2026-08-14T17:11:42+00:00",
+            "credential": "sin credencial; conexión TCP local",
+            "detail": "Sondeo puntual de listeners, no historial de incidentes."
+          },
+          {
+            "source": "PostgreSQL local",
+            "observed": {
+              "reachable": true,
+              "database": "lifeos_dev",
+              "version": "16.4"
+            },
+            "collected_at": "2026-08-14T17:11:42+00:00",
+            "credential": "usuario y base leídos del entorno del contenedor; valores ocultos",
+            "detail": "SELECT current_database(), current_setting('server_version')"
+          },
+          {
+            "source": "Redis local",
+            "observed": {
+              "ping": true
+            },
+            "collected_at": "2026-08-14T17:11:42+00:00",
+            "credential": "REDIS_URL existente en apps/api/.env; valor oculto",
+            "detail": "redis-cli PING dentro del contenedor"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "L02",
+      "question": "¿Cuál es la rama actual del repositorio Tchasky?",
+      "route": "LIVE",
+      "intent": "git_branch",
+      "answer": {
+        "schema": "task124-answer-v1",
+        "question": "¿Cuál es la rama actual del repositorio Tchasky?",
+        "routing": {
+          "route": "LIVE",
+          "intent": "git_branch",
+          "matched_live_signals": [
+            "actual"
+          ],
+          "matched_documentary_signals": [],
+          "reason": "Coinciden una señal de actualidad y una fuente viva soportada."
+        },
+        "answered_at": "2026-08-14T17:11:42+00:00",
+        "status": "ANSWERED",
+        "answer": "La rama local actual de Tchasky es feature/mobile-foundation.",
+        "sources": [
+          {
+            "source": "Git local",
+            "observed": {
+              "branch": "feature/mobile-foundation"
+            },
+            "collected_at": "2026-08-14T17:11:42+00:00",
+            "credential": "sin credencial; repositorio local",
+            "detail": "git branch --show-current"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "L03",
+      "question": "¿Cuál es el último commit local ahora?",
+      "route": "LIVE",
+      "intent": "git_commit",
+      "answer": {
+        "schema": "task124-answer-v1",
+        "question": "¿Cuál es el último commit local ahora?",
+        "routing": {
+          "route": "LIVE",
+          "intent": "git_commit",
+          "matched_live_signals": [
+            "ahora",
+            "ultimo"
+          ],
+          "matched_documentary_signals": [],
+          "reason": "Coinciden una señal de actualidad y una fuente viva soportada."
+        },
+        "answered_at": "2026-08-14T17:11:42+00:00",
+        "status": "ANSWERED",
+        "answer": "El último commit local es 1095387cf594: El movil no tenia nada del sistema de temas, y ya no hacia falta esperar.",
+        "sources": [
+          {
+            "source": "Git local",
+            "observed": {
+              "sha": "1095387cf594dc4d8f987b89329beba9b49d54f2",
+              "committed_at": "2026-08-12T22:34:49-05:00",
+              "subject": "El movil no tenia nada del sistema de temas, y ya no hacia falta esperar"
+            },
+            "collected_at": "2026-08-14T17:11:42+00:00",
+            "credential": "sin credencial; repositorio local",
+            "detail": "git log -1"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "L04",
+      "question": "¿Está la API local escuchando ahora en el puerto 3001?",
+      "route": "LIVE",
+      "intent": "api_port",
+      "answer": {
+        "schema": "task124-answer-v1",
+        "question": "¿Está la API local escuchando ahora en el puerto 3001?",
+        "routing": {
+          "route": "LIVE",
+          "intent": "api_port",
+          "matched_live_signals": [
+            "ahora",
+            "escuchando"
+          ],
+          "matched_documentary_signals": [],
+          "reason": "Coinciden una señal de actualidad y una fuente viva soportada."
+        },
+        "answered_at": "2026-08-14T17:11:42+00:00",
+        "status": "ANSWERED",
+        "answer": "La API local no está escuchando en 127.0.0.1:3001.",
+        "sources": [
+          {
+            "source": "socket TCP local",
+            "observed": {
+              "host": "127.0.0.1",
+              "port": 3001,
+              "listening": false
+            },
+            "collected_at": "2026-08-14T17:11:42+00:00",
+            "credential": "sin credencial; conexión TCP local",
+            "detail": "connect_ex con tiempo límite de 1,5 segundos"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "L05",
+      "question": "¿Está la web local activa hoy en el puerto 5173?",
+      "route": "LIVE",
+      "intent": "web_port",
+      "answer": {
+        "schema": "task124-answer-v1",
+        "question": "¿Está la web local activa hoy en el puerto 5173?",
+        "routing": {
+          "route": "LIVE",
+          "intent": "web_port",
+          "matched_live_signals": [
+            "activa",
+            "hoy"
+          ],
+          "matched_documentary_signals": [],
+          "reason": "Coinciden una señal de actualidad y una fuente viva soportada."
+        },
+        "answered_at": "2026-08-14T17:11:42+00:00",
+        "status": "ANSWERED",
+        "answer": "La web local no está escuchando en 127.0.0.1:5173.",
+        "sources": [
+          {
+            "source": "socket TCP local",
+            "observed": {
+              "host": "127.0.0.1",
+              "port": 5173,
+              "listening": false
+            },
+            "collected_at": "2026-08-14T17:11:42+00:00",
+            "credential": "sin credencial; conexión TCP local",
+            "detail": "connect_ex con tiempo límite de 1,5 segundos"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "L06",
+      "question": "¿Postgres está disponible ahora y cuál es la última migración aplicada?",
+      "route": "LIVE",
+      "intent": "postgres",
+      "answer": {
+        "schema": "task124-answer-v1",
+        "question": "¿Postgres está disponible ahora y cuál es la última migración aplicada?",
+        "routing": {
+          "route": "LIVE",
+          "intent": "postgres",
+          "matched_live_signals": [
+            "ahora",
+            "disponible",
+            "ultima"
+          ],
+          "matched_documentary_signals": [],
+          "reason": "Coinciden una señal de actualidad y una fuente viva soportada."
+        },
+        "answered_at": "2026-08-14T17:11:42+00:00",
+        "status": "ANSWERED",
+        "answer": "PostgreSQL responde en la base lifeos_dev con versión 16.4; la última migración registrada es 0080_palette_preferences_and_founding_member.sql (2026-08-13 02:26:24.247503+00).",
+        "sources": [
+          {
+            "source": "PostgreSQL local",
+            "observed": {
+              "status": {
+                "reachable": true,
+                "database": "lifeos_dev",
+                "version": "16.4"
+              },
+              "latest_migration": {
+                "filename": "0080_palette_preferences_and_founding_member.sql",
+                "applied_at": "2026-08-13 02:26:24.247503+00"
+              }
+            },
+            "collected_at": "2026-08-14T17:11:43+00:00",
+            "credential": "usuario y base leídos del entorno del contenedor; valores ocultos",
+            "detail": "Consultas SELECT de solo lectura dentro de lifeos_postgres."
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "L07",
+      "question": "¿Redis responde ahora y cuál es su política de expulsión actual?",
+      "route": "LIVE",
+      "intent": "redis",
+      "answer": {
+        "schema": "task124-answer-v1",
+        "question": "¿Redis responde ahora y cuál es su política de expulsión actual?",
+        "routing": {
+          "route": "LIVE",
+          "intent": "redis",
+          "matched_live_signals": [
+            "actual",
+            "ahora",
+            "responde"
+          ],
+          "matched_documentary_signals": [],
+          "reason": "Coinciden una señal de actualidad y una fuente viva soportada."
+        },
+        "answered_at": "2026-08-14T17:11:43+00:00",
+        "status": "ANSWERED",
+        "answer": "Redis responde PONG y su política actual es noeviction.",
+        "sources": [
+          {
+            "source": "Redis local",
+            "observed": {
+              "ping": true,
+              "maxmemory-policy": "noeviction"
+            },
+            "collected_at": "2026-08-14T17:11:43+00:00",
+            "credential": "REDIS_URL existente en apps/api/.env; valor oculto",
+            "detail": "redis-cli PING y CONFIG GET dentro de lifeos_redis."
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "L08",
+      "question": "¿Qué versión de Ollama está activa ahora?",
+      "route": "LIVE",
+      "intent": "ollama",
+      "answer": {
+        "schema": "task124-answer-v1",
+        "question": "¿Qué versión de Ollama está activa ahora?",
+        "routing": {
+          "route": "LIVE",
+          "intent": "ollama",
+          "matched_live_signals": [
+            "activa",
+            "ahora"
+          ],
+          "matched_documentary_signals": [],
+          "reason": "Coinciden una señal de actualidad y una fuente viva soportada."
+        },
+        "answered_at": "2026-08-14T17:11:43+00:00",
+        "status": "ANSWERED",
+        "answer": "Ollama reporta la versión 0.32.9 por el puerto 11435.",
+        "sources": [
+          {
+            "source": "API de Ollama vía anythingllm-router",
+            "observed": {
+              "port": 11435,
+              "version": "0.32.9",
+              "models": [
+                "phi4-mini:latest",
+                "gemma2:2b",
+                "llama3.2:3b",
+                "qwen2.5:3b-instruct",
+                "qwen2.5:7b-instruct",
+                "bge-m3:latest",
+                "qwen3.5:9b",
+                "nomic-embed-text:latest",
+                "qwen2.5-coder:7b"
+              ]
+            },
+            "collected_at": "2026-08-14T17:11:43+00:00",
+            "credential": "sin credencial; URL leída del entorno del contenedor",
+            "detail": "GET /api/version y GET /v1/models desde el contenedor del router."
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "L09",
+      "question": "¿Cuál es el último despliegue de producción en Vercel?",
+      "route": "LIVE",
+      "intent": "vercel",
+      "answer": {
+        "schema": "task124-answer-v1",
+        "question": "¿Cuál es el último despliegue de producción en Vercel?",
+        "routing": {
+          "route": "LIVE",
+          "intent": "vercel",
+          "matched_live_signals": [
+            "ultimo"
+          ],
+          "matched_documentary_signals": [],
+          "reason": "Coinciden una señal de actualidad y una fuente viva soportada."
+        },
+        "answered_at": "2026-08-14T17:11:43+00:00",
+        "status": "ANSWERED",
+        "answer": "El último deployment de producción en Vercel está READY y usa dpl_EAPtP5N1cULtqCg1DYTJS25UY32L (tchasky-kqbaup95n-tchasky.vercel.app).",
+        "sources": [
+          {
+            "source": "Vercel REST API",
+            "observed": {
+              "id": "dpl_EAPtP5N1cULtqCg1DYTJS25UY32L",
+              "state": "READY",
+              "url": "tchasky-kqbaup95n-tchasky.vercel.app",
+              "created_at": "2026-08-12T20:45:20.746000+00:00",
+              "ready_at": "2026-08-12T20:46:04.937000+00:00",
+              "branch": "feature/mobile-foundation",
+              "commit_sha": "c53fccff3a42558b9c11a004b8f5367b52c2d05d"
+            },
+            "collected_at": "2026-08-14T17:11:44+00:00",
+            "credential": "VERCEL_TOKEN existente en <HOME>/<PRIVATE_PROJECT>/.env; valor oculto",
+            "detail": "GET /v6/deployments para el proyecto tchasky-web y target production."
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "L10",
+      "question": "¿Cuál es el estado actual del último despliegue de producción en Railway?",
+      "route": "LIVE",
+      "intent": "railway",
+      "answer": {
+        "schema": "task124-answer-v1",
+        "question": "¿Cuál es el estado actual del último despliegue de producción en Railway?",
+        "routing": {
+          "route": "LIVE",
+          "intent": "railway",
+          "matched_live_signals": [
+            "actual",
+            "estado actual",
+            "ultimo"
+          ],
+          "matched_documentary_signals": [],
+          "reason": "Coinciden una señal de actualidad y una fuente viva soportada."
+        },
+        "answered_at": "2026-08-14T17:11:44+00:00",
+        "status": "ANSWERED",
+        "answer": "El último deployment de producción en Railway está SUCCESS y usa dd7bab6f-5637-4445-9568-f628185075f2.",
+        "sources": [
+          {
+            "source": "Railway GraphQL API",
+            "observed": {
+              "id": "dd7bab6f-5637-4445-9568-f628185075f2",
+              "status": "SUCCESS",
+              "created_at": "2026-08-12T14:31:57.926Z",
+              "branch": null,
+              "commit_sha": null
+            },
+            "collected_at": "2026-08-14T17:11:44+00:00",
+            "credential": "RAILWAY_TOKEN existente en <HOME>/<PRIVATE_PROJECT>/.env; valor oculto",
+            "detail": "Consulta deployments(first: 1) del servicio y entorno de producción."
+          }
+        ]
+      },
+      "passed": true
+    }
+  ],
+  "negative_results": [
+    {
+      "id": "N01",
+      "question": "¿Por qué se eligieron Postgres y Redis para la arquitectura?",
+      "route": "RAG",
+      "rag": {
+        "called": true,
+        "success": true,
+        "http_status": 200,
+        "queried_at": "2026-08-14T17:11:46+00:00",
+        "elapsed_ms": 1966.241,
+        "top_sources": [
+          "03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTGRES_REDIS/README.md",
+          "01_ANALISIS_Y_ARQUITECTURA/proyectos_privados/Bloque_6_Tchasky_arquitectura_tecnica_general.txt",
+          "06_CONVERSACIONES_CLAUDE_EXPORT/taskychasky/2026-04-30_87795fc4.md",
+          "03_Tchasky/BLOCKERS.md",
+          "04_CONTEXTO_Y_PROMPTS/downloads/CONTEXTO_PROFUNDO_PARTE1.md"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "N02",
+      "question": "¿Qué decisión tomó el fundador sobre reparar afirmaciones falsas?",
+      "route": "RAG",
+      "rag": {
+        "called": true,
+        "success": true,
+        "http_status": 200,
+        "queried_at": "2026-08-14T17:11:48+00:00",
+        "elapsed_ms": 1857.176,
+        "top_sources": [
+          "04_CONTEXTO_Y_PROMPTS/downloads/PROTOCOLO_VERIFICACION_ANTI_ERROR.md",
+          "04_CONTEXTO_Y_PROMPTS/codex_attachments/CHAT_EXPORT_TCHASKY_PROTOCOLO_VERIFICACION_ANTI_ERROR_2026-07-18.md",
+          "04_CONTEXTO_Y_PROMPTS/codex_attachments/CHAT_EXPORT_TCHASKY_PROTOCOLO_ACTUALIZACION_CONTEXTO_2026-07-18.md",
+          "00_Command_Center/OCA_MVP_DESARROLLO_PROFUNDO_2026-07-23.md",
+          "04_CONTEXTO_Y_PROMPTS/codex_attachments/CHAT_EXPORT_TCHASKY_CONTEXTO_PROFUNDO_PARTE4_2026-07-18.md"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "N03",
+      "question": "¿Cómo está diseñada la autenticación móvil?",
+      "route": "RAG",
+      "rag": {
+        "called": true,
+        "success": true,
+        "http_status": 200,
+        "queried_at": "2026-08-14T17:11:50+00:00",
+        "elapsed_ms": 1936.375,
+        "top_sources": [
+          "03_Tchasky/READINESS_MOBILE_2026-08-02.md",
+          "03_Tchasky/docs/adr/0011-mobile-auth-sesiones.md",
+          "skills/testing-mobile-api-authentication/SKILL.md",
+          "skills/testing-mobile-api-authentication/references/api-reference.md",
+          "03_Tchasky/AUDITORIA_PARIDAD_WEB_MOBILE_2026-08-03.md"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "N04",
+      "question": "¿Qué ocurrió en el incidente de Culqi documentado?",
+      "route": "RAG",
+      "rag": {
+        "called": true,
+        "success": true,
+        "http_status": 200,
+        "queried_at": "2026-08-14T17:11:52+00:00",
+        "elapsed_ms": 1878.945,
+        "top_sources": [
+          "03_Tchasky/INFORME_FORENSE_CULQI_2026-08-12.md",
+          "03_Tchasky/PENDIENTES_CIERRE_SESION_2026-08-02.md",
+          "03_Tchasky/AUDIT_01_CHECKOUT_SECURITY_2026-08-02.md",
+          "03_Tchasky/VERIFICACION_INTEGRAL_2026-08-03.md",
+          "03_Tchasky/TIER3_INFRA_QA_2026-07-24.md"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "N05",
+      "question": "¿Cuáles fueron los motivos históricos para separar la API y la web?",
+      "route": "RAG",
+      "rag": {
+        "called": true,
+        "success": true,
+        "http_status": 200,
+        "queried_at": "2026-08-14T17:11:54+00:00",
+        "elapsed_ms": 2021.935,
+        "top_sources": [
+          "01_ANALISIS_Y_ARQUITECTURA/proyectos_privados/Bloque_8_Tchasky_diseno_completo_APIs.txt",
+          "skills/performing-api-inventory-and-discovery/references/api-reference.md",
+          "03_Tchasky/BITACORA_TCHASKY.md",
+          "skills/implementing-api-gateway-security-controls/SKILL.md",
+          "skills/securing-historian-server-in-ot-environment/references/api-reference.md"
+        ]
+      },
+      "passed": true
+    }
+  ],
+  "protected_scope": {
+    "all_unchanged": true,
+    "items": [
+      {
+        "path": "02_LOCAL_AI/ANYTHINGLLM/rag_golden_set.json",
+        "sha256_before": "603293c5dd3d5beec1a9054d3bd51563d7f5cd2c327cbd619d480ee134b9778f",
+        "sha256_after": "603293c5dd3d5beec1a9054d3bd51563d7f5cd2c327cbd619d480ee134b9778f",
+        "unchanged": true
+      },
+      {
+        "path": "02_LOCAL_AI/ANYTHINGLLM/operational_golden_set.json",
+        "sha256_before": "cd3350f894e74282ef1ac19b8fbffed66fb5f2adf43df8511f92798df5c3d1a4",
+        "sha256_after": "cd3350f894e74282ef1ac19b8fbffed66fb5f2adf43df8511f92798df5c3d1a4",
+        "unchanged": true
+      },
+      {
+        "path": "02_LOCAL_AI/ANYTHINGLLM/operational_index.sqlite3",
+        "sha256_before": "027174c9ca2f28e80c1354ab62e431facac13195102a26c8cf476b3c2fa71fd4",
+        "sha256_after": "027174c9ca2f28e80c1354ab62e431facac13195102a26c8cf476b3c2fa71fd4",
+        "unchanged": true
+      },
+      {
+        "path": "02_LOCAL_AI/ANYTHINGLLM/storage/anythingllm.db",
+        "sha256_before": "53d8f5d4bbf5941a40145160c4538cbb48e2933894e56bd091785b34fea9e36e",
+        "sha256_after": "53d8f5d4bbf5941a40145160c4538cbb48e2933894e56bd091785b34fea9e36e",
+        "unchanged": true
+      },
+      {
+        "path": "02_LOCAL_AI/ROUTER/**",
+        "sha256_before": "45cf5210d428b5fb8d26749823c1502ea7e051a1cebc498f0ed79637da91db3f",
+        "sha256_after": "45cf5210d428b5fb8d26749823c1502ea7e051a1cebc498f0ed79637da91db3f",
+        "unchanged": true
+      }
+    ]
+  },
+  "source_inventory_summary": {
+    "rows": 20,
+    "reachable": 15,
+    "not_reachable": 5,
+    "mcp_catalog_entries": 394,
+    "mcp_project_relevant_callable_now": 0,
+    "task123_claims_checked": 87,
+    "task123_checkable": 85
+  }
+}

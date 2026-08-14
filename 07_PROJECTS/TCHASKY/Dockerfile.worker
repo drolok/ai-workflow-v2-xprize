@@ -1,0 +1,8 @@
+FROM node:20-alpine
+ENV NODE_ENV=production
+ENV PORT=3001
+WORKDIR /app
+COPY package.json pnpm-workspace.yaml ./
+COPY . .
+RUN corepack enable && corepack prepare pnpm@9.15.0 --activate && pnpm install --frozen-lockfile --ignore-scripts
+CMD ["sh", "-c", "if [ -f apps/worker/dist/index.js ]; then node apps/worker/dist/index.js; elif [ -f apps/api/dist/worker.js ]; then node apps/api/dist/worker.js; else echo 'No worker entrypoint found' && exit 1; fi"]

@@ -1,0 +1,60 @@
+{
+  "task": "TASK-120",
+  "estado": "completo",
+  "fecha": "2026-08-13T23:43:46.300185-05:00",
+  "ruta_real": "/api/workspace/:slug/stream-chat",
+  "workspace": "bis_brain-segundo-cerebro",
+  "memoria_disponible_gib_inicio": 17.632644653320312,
+  "resultados": [
+    {
+      "numero": 15,
+      "tipo": "respondible",
+      "pregunta": "¿Cómo se evita que un token robado siga dando acceso después de detectar el uso de uno que ya había sido rotado?",
+      "esperado": "03_Tchasky/VULNERABILIDADES/004-refresh-token-sin-deteccion-de-reuso.md",
+      "duracion_segundos": 3.473,
+      "respuesta": "Según el contexto, si un atacante roba un refresh token y lo usa antes que el usuario legítimo, la rotación persiste el hash del nuevo token del atacante en Redis. Para evitar que un token robado siga dando acceso después de detectar el uso de uno que ya había sido rotado, se debe implementar un patrón estándar de la industria que detecte la presentación de un token ya rotado y revocar toda la familia de sesión + notificar.",
+      "fuentes": [
+        {
+          "posicion": 1,
+          "docSource": "03_Tchasky/VULNERABILIDADES/004-refresh-token-sin-deteccion-de-reuso.md",
+          "score": 0.7039921879768372
+        },
+        {
+          "posicion": 2,
+          "docSource": "03_Tchasky/SEGURIDAD/INVENTARIO_SECRETOS_ROTACION.md",
+          "score": 0.6696853041648865
+        },
+        {
+          "posicion": 3,
+          "docSource": "skills/configuring-oauth2-authorization-flow/references/workflows.md",
+          "score": 0.6557092070579529
+        },
+        {
+          "posicion": 4,
+          "docSource": "skills/hunting-saas-sso-token-abuse/SKILL.md",
+          "score": 0.6545743346214294
+        },
+        {
+          "posicion": 5,
+          "docSource": "skills/testing-api-authentication-weaknesses/SKILL.md",
+          "score": 0.6247107982635498
+        }
+      ],
+      "posicion_esperada": 1,
+      "paso": true
+    },
+    {
+      "numero": 38,
+      "tipo": "sin_respuesta",
+      "pregunta": "¿Cuál fue el resultado del ensayo clínico que hizo Tchasky con un medicamento para la migraña?",
+      "esperado": null,
+      "duracion_segundos": 3.096,
+      "respuesta": "No hay informacion relevante en tus notas sobre eso.",
+      "fuentes": [],
+      "posicion_esperada": null,
+      "paso": true
+    }
+  ],
+  "fallos": [],
+  "memoria_disponible_gib_fin": 17.620365142822266
+}

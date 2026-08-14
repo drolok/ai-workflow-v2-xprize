@@ -1,0 +1,113 @@
+{
+  "name": "AIW Health Check Periodic",
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 30
+            }
+          ]
+        }
+      },
+      "id": "7b1b36e1-3e61-46a4-8566-7fd3e7d1f201",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        240,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8765/run/health-check",
+        "sendHeaders": true,
+        "specifyHeaders": "keypair",
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"updateCanonical\": false\n}",
+        "options": {},
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-Runner-Token",
+              "value": "={{$env.AIW_N8N_RUNNER_TOKEN}}"
+            }
+          ]
+        }
+      },
+      "id": "1f39cb03-96ab-4652-a9c5-f6ee7705ec0f",
+      "name": "Run Health Check",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        520,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8765/run/scan-ports",
+        "sendHeaders": true,
+        "specifyHeaders": "keypair",
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"additionalPorts\": [5678, 8765]\n}",
+        "options": {},
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-Runner-Token",
+              "value": "={{$env.AIW_N8N_RUNNER_TOKEN}}"
+            }
+          ]
+        }
+      },
+      "id": "9f5f1ff0-28df-4e3c-b197-31636b703d9e",
+      "name": "Run Port Scan",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        800,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Run Health Check",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Run Health Check": {
+      "main": [
+        [
+          {
+            "node": "Run Port Scan",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "versionId": "da8a55dd-b8ae-4540-ad69-2fc137765501"
+}

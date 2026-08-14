@@ -1,0 +1,87 @@
+{
+  "cluster_name": "AI_WORKFLOW_AUTOMATION_CLUSTER",
+  "version": "1.0.0",
+  "description": "Especificación de roles y responsabilidades de las IAs dentro del ecosistema AI_WORKFLOW",
+  "agents": [
+    {
+      "id": "claude_auditor",
+      "name": "Claude Code Auditor",
+      "type": "auditor",
+      "provider": "Anthropic Claude",
+      "primary_role": "Auditora General, Validadora de Calidad y Certificadora de Fases",
+      "responsibilities": [
+        "Revisar evidencia física real en disco (diffs, logs, test outputs)",
+        "Verificar que lo reportado coincida exactamente con el estado actual del repositorio",
+        "Aprobar o rechazar el avance de fase o el cierre de tareas",
+        "Escalar decisiones de negocio o producto al fundador (status: needs_founder)"
+      ],
+      "execution_rules": {
+        "direct_code_changes": false,
+        "requires_verification_before_approval": true
+      }
+    },
+    {
+      "id": "codex_executor",
+      "name": "Codex / Antigravity Orchestrator & Implementer",
+      "type": "executor",
+      "provider": "Google DeepMind Antigravity / Codex CLI",
+      "primary_role": "Orquestador Técnico y Ejecutor Principal de Código e Infraestructura",
+      "responsibilities": [
+        "Ejecutar modificaciones en repositorios (Tchasky, AI_WORKFLOW, scripts)",
+        "Correr suites de prueba y capturar evidencias estricta de ejecución",
+        "Ejecutar comandos de terminal, builds, migraciones y contenedores Docker",
+        "Preparar handoffs y encolar solicitudes de auditoría para Claude Auditor"
+      ],
+      "execution_rules": {
+        "must_generate_evidence": true,
+        "auto_enqueue_to_bridge": true
+      }
+    },
+    {
+      "id": "local_ai_worker",
+      "name": "Local AI Worker & RAG Memory Assistant",
+      "type": "local_worker",
+      "provider": "Ollama / LM Studio / AnythingLLM",
+      "primary_role": "Memoria Local, Clasificación Documental y RAG Offline",
+      "responsibilities": [
+        "Búsqueda y extracción contextual de documentos locales vía AnythingLLM",
+        "Filtrado inicial de logs extensos sin gasto de tokens",
+        "Resúmenes offline y chequeos de sintaxis locales usando qwen2.5-coder:7b"
+      ],
+      "execution_rules": {
+        "localhost_only": true,
+        "no_external_telemetry": true
+      }
+    },
+    {
+      "id": "n8n_event_watcher",
+      "name": "n8n Automation Event Watcher",
+      "type": "event_trigger",
+      "provider": "n8n Docker / host_runner.py",
+      "primary_role": "Monitoreo Continuo, Triggers de Eventos y Telemetría",
+      "responsibilities": [
+        "Correr cron jobs y watchers de salud del sistema (health_check.ps1, scan_ports.ps1)",
+        "Detectar eventos del sistema y nuevos documentos en 04_DOCUMENT_PROCESSING",
+        "Encolar tareas automáticas al puente Codex-Claude"
+      ],
+      "execution_rules": {
+        "read_only_triggers": true,
+        "authenticated_runner_token": true
+      }
+    },
+    {
+      "id": "fallback_architect",
+      "name": "External Fallback Architect",
+      "type": "architect_fallback",
+      "provider": "NVIDIA API (GLM-5.2) / StepFun 3.7",
+      "primary_role": "Arquitectura de Caso Complejo y Fallback de Ejecución",
+      "responsibilities": [
+        "Responder cuando el modelo principal experimente bloqueos o fallos",
+        "Evaluar refactorizaciones complejas y trade-offs de arquitectura"
+      ],
+      "execution_rules": {
+        "invoked_via_fallback_script": true
+      }
+    }
+  ]
+}

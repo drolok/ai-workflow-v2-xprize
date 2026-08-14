@@ -1,0 +1,66 @@
+{
+  "name": "AIW Tchasky Test Runner",
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "tchasky-test-runner",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "id": "7e1cc5f1-c0a9-44bd-84cc-26e227f72757",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        240,
+        520
+      ],
+      "webhookId": "717d46c0-a3d0-4f7e-8135-3fefa401c702"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8765/run/test-runner",
+        "sendHeaders": true,
+        "specifyHeaders": "keypair",
+        "options": {},
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-Runner-Token",
+              "value": "={{$env.AIW_N8N_RUNNER_TOKEN}}"
+            }
+          ]
+        }
+      },
+      "id": "0dc6dc0f-62ff-4d41-8ea1-e8674bf931aa",
+      "name": "Run API Tests",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        520,
+        520
+      ]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Run API Tests",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "versionId": "efa6df14-b4d4-4ad9-b8ba-8ca4ca59643a"
+}

@@ -1,0 +1,33 @@
+# Secrets and local environment
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*
+secrets*
+
+# Dependencies and caches
+node_modules/
+vendor/
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+
+# Downloaded/generated state
+models/
+backups/
+data/
+queue/
+*.db
+*.sqlite*
+*.lance
+*.log
+
+# Editor and OS state
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

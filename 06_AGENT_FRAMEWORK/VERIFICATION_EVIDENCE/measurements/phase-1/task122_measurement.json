@@ -1,0 +1,1295 @@
+{
+  "schema": "task122-measurement-v1",
+  "measured_at": "2026-08-14T05:34:26.943197+00:00",
+  "criterion": "20/20 documentos correctos en primera posicion para FTS5",
+  "approved": true,
+  "memory_available_gb_before": 17.287,
+  "index": {
+    "database": "/mnt/c/AI_WORKFLOW_V2/02_LOCAL_AI/ANYTHINGLLM/operational_index.sqlite3",
+    "documents": 23,
+    "indexed_at": "2026-08-14T05:33:36.866717+00:00"
+  },
+  "measurement_context": {
+    "task121_running": true,
+    "note": "TASK-121 estaba reembebiendo el RAG durante esta medición de solo lectura."
+  },
+  "rag": {
+    "top1": 10,
+    "top5": 16,
+    "total": 20,
+    "base": "http://127.0.0.1:3110",
+    "skipped": false,
+    "latency_ms": {
+      "min": 2183.603,
+      "median": 2483.782,
+      "max": 3173.364
+    }
+  },
+  "fts5": {
+    "top1": 20,
+    "top5": 20,
+    "total": 20,
+    "latency_ms": {
+      "min": 8.074,
+      "median": 11.655,
+      "max": 23.931
+    }
+  },
+  "frontmatter": {
+    "documents": [
+      "00_COMMAND_CENTER/CURRENT_STATE.md",
+      "00_COMMAND_CENTER/SYSTEM_HEALTH.md",
+      "00_COMMAND_CENTER/TOOL_REGISTRY.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/CURRENT_STATE.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/APPLE_SIGNIN/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/CLOUDINARY/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/CULQI/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EMAIL_SOPORTE/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EXPO_EAS/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/FIREBASE/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/MERCADO_PAGO/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/NUBEFACT/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTGRES_REDIS/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTHOG/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RESEND/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/SENTRY/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/TRUORA/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/OPS/INCIDENTES.md"
+    ],
+    "mapped_existing_freshness_headers": [
+      "00_COMMAND_CENTER/CURRENT_STATE.md",
+      "00_COMMAND_CENTER/TOOL_REGISTRY.md"
+    ],
+    "added_without_four_field_freshness_header": [
+      "00_COMMAND_CENTER/SYSTEM_HEALTH.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/CURRENT_STATE.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/APPLE_SIGNIN/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/CLOUDINARY/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/CULQI/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EMAIL_SOPORTE/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EXPO_EAS/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/FIREBASE/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/MERCADO_PAGO/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/NUBEFACT/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTGRES_REDIS/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTHOG/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RESEND/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/SENTRY/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/TRUORA/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+      "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/OPS/INCIDENTES.md"
+    ]
+  },
+  "cases": [
+    {
+      "id": "OP01",
+      "question": "¿Cuál es el SHA-1 del certificado con el que Google Play firma la aplicación instalada?",
+      "expected_document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md",
+      "evidence_terms": [
+        "EF:13:86:2E:C1:0C:45:71:EE:98:0F:0F:11:CF:4E:EB:78:AF:FF:1F",
+        "`apksigner` sobre el APK extraido del telefono"
+      ],
+      "rag": {
+        "position": null,
+        "top_paths": [
+          "03_Tchasky/BITACORA_TCHASKY.md",
+          "skills/detecting-dll-sideloading-attacks/references/workflows.md",
+          "skills/implementing-google-workspace-phishing-protection/assets/template.md",
+          "skills/implementing-code-signing-for-artifacts/assets/template.md",
+          "skills/implementing-digital-signatures-with-ed25519/references/workflows.md"
+        ],
+        "elapsed_ms": 2767.41,
+        "error": null,
+        "skipped": false
+      },
+      "fts5": {
+        "position": 1,
+        "top_paths": [
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/FIREBASE/README.md",
+          "00_COMMAND_CENTER/CURRENT_STATE.md",
+          "00_COMMAND_CENTER/TOOL_REGISTRY.md"
+        ],
+        "elapsed_ms": 23.931,
+        "top_result": {
+          "path": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md",
+          "title": "Google OAuth — Sign in with Google",
+          "key": "google_oauth",
+          "namespace": "tchasky.deploy",
+          "tags": [
+            "google",
+            "oauth",
+            "client id",
+            "sha1",
+            "certificado",
+            "play signing",
+            "llave de subida",
+            "eas",
+            "android"
+          ],
+          "status": "active",
+          "verified": "2026-08-13",
+          "stale_after": "2026-09-13",
+          "is_stale": false,
+          "sources": [
+            "apksigner sobre el APK instalado",
+            "Google Cloud Console",
+            "Firebase Console",
+            "Play Console"
+          ],
+          "score": 126.235608
+        }
+      }
+    },
+    {
+      "id": "OP02",
+      "question": "¿Cuál es el SHA-1 de la llave de subida de EAS para Android?",
+      "expected_document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md",
+      "evidence_terms": [
+        "8E:FD:B8:70:02:94:46:0B:E5:6E:11:FD:9E:4D:41:F0:3A:A2:77:99",
+        "Llave de subida"
+      ],
+      "rag": {
+        "position": null,
+        "top_paths": [
+          "skills/implementing-secret-scanning-with-gitleaks/assets/template.md",
+          "skills/configuring-tls-1-3-for-secure-communications/SKILL.md",
+          "skills/reverse-engineering-ransomware-encryption-routine/SKILL.md",
+          "03_Tchasky/REPORTE_CONSOLIDADO_READINESS_BETA_2026-08-02.md",
+          "skills/reverse-engineering-android-malware-with-jadx/SKILL.md"
+        ],
+        "elapsed_ms": 2389.006,
+        "error": null,
+        "skipped": false
+      },
+      "fts5": {
+        "position": 1,
+        "top_paths": [
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EXPO_EAS/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/FIREBASE/README.md",
+          "00_COMMAND_CENTER/CURRENT_STATE.md"
+        ],
+        "elapsed_ms": 10.376,
+        "top_result": {
+          "path": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md",
+          "title": "Google OAuth — Sign in with Google",
+          "key": "google_oauth",
+          "namespace": "tchasky.deploy",
+          "tags": [
+            "google",
+            "oauth",
+            "client id",
+            "sha1",
+            "certificado",
+            "play signing",
+            "llave de subida",
+            "eas",
+            "android"
+          ],
+          "status": "active",
+          "verified": "2026-08-13",
+          "stale_after": "2026-09-13",
+          "is_stale": false,
+          "sources": [
+            "apksigner sobre el APK instalado",
+            "Google Cloud Console",
+            "Firebase Console",
+            "Play Console"
+          ],
+          "score": 111.293248
+        }
+      }
+    },
+    {
+      "id": "OP03",
+      "question": "¿Qué Client ID web de Google OAuth usa el backend, la web y el SDK móvil?",
+      "expected_document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md",
+      "evidence_terms": [
+        "1083143160929-9oldvi92r587s3klvm9rjsaroinmtb5d.apps.googleusercontent.com",
+        "VITE_GOOGLE_CLIENT_ID"
+      ],
+      "rag": {
+        "position": 2,
+        "top_paths": [
+          "03_Tchasky/P0_PREP_EAS_BUILD_2026-08-02.md",
+          "03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md",
+          "03_Tchasky/VERIFICACION_INTEGRAL_2026-08-03.md",
+          "03_Tchasky/READINESS_MOBILE_2026-08-02.md",
+          "skills/testing-oauth2-implementation-flaws/SKILL.md"
+        ],
+        "elapsed_ms": 2679.3,
+        "error": null,
+        "skipped": false
+      },
+      "fts5": {
+        "position": 1,
+        "top_paths": [
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/OPS/INCIDENTES.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/APPLE_SIGNIN/README.md"
+        ],
+        "elapsed_ms": 11.364,
+        "top_result": {
+          "path": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md",
+          "title": "Google OAuth — Sign in with Google",
+          "key": "google_oauth",
+          "namespace": "tchasky.deploy",
+          "tags": [
+            "google",
+            "oauth",
+            "client id",
+            "sha1",
+            "certificado",
+            "play signing",
+            "llave de subida",
+            "eas",
+            "android"
+          ],
+          "status": "active",
+          "verified": "2026-08-13",
+          "stale_after": "2026-09-13",
+          "is_stale": false,
+          "sources": [
+            "apksigner sobre el APK instalado",
+            "Google Cloud Console",
+            "Firebase Console",
+            "Play Console"
+          ],
+          "score": 133.087438
+        }
+      }
+    },
+    {
+      "id": "OP04",
+      "question": "¿Cuál es el Project ID real de Firebase de Tchasky?",
+      "expected_document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/FIREBASE/README.md",
+      "evidence_terms": [
+        "gen-lang-client-0932571499",
+        "Project ID real"
+      ],
+      "rag": {
+        "position": 2,
+        "top_paths": [
+          "03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md",
+          "03_Tchasky/DEPLOY_INFRAESTRUCTURA/FIREBASE/README.md",
+          "03_Tchasky/DEPLOY_INFRAESTRUCTURA/EXPO_EAS/README.md",
+          "03_Tchasky/TIMELINE.md",
+          "03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md"
+        ],
+        "elapsed_ms": 2593.082,
+        "error": null,
+        "skipped": false
+      },
+      "fts5": {
+        "position": 1,
+        "top_paths": [
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/FIREBASE/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/OPS/INCIDENTES.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md"
+        ],
+        "elapsed_ms": 13.755,
+        "top_result": {
+          "path": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/FIREBASE/README.md",
+          "title": "Firebase — Phone Auth (sign-in por teléfono)",
+          "key": "firebase",
+          "namespace": "tchasky.deploy",
+          "tags": [
+            "firebase",
+            "project id",
+            "app id",
+            "phone auth",
+            "android",
+            "sha1",
+            "credenciales"
+          ],
+          "status": "active",
+          "verified": "2026-08-13",
+          "stale_after": "2026-09-13",
+          "is_stale": false,
+          "sources": [
+            "Firebase Console",
+            "Google Cloud Console",
+            "GOOGLE_OAUTH/README.md"
+          ],
+          "score": 104.959119
+        }
+      }
+    },
+    {
+      "id": "OP05",
+      "question": "¿Cuál es el App ID de la aplicación Android registrada en Firebase?",
+      "expected_document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/FIREBASE/README.md",
+      "evidence_terms": [
+        "1:1083143160929:android:06eaa94f0092d8772a1620",
+        "com.tchasky.mobile"
+      ],
+      "rag": {
+        "position": 1,
+        "top_paths": [
+          "03_Tchasky/DEPLOY_INFRAESTRUCTURA/FIREBASE/README.md",
+          "03_Tchasky/DEPLOY_INFRAESTRUCTURA/EXPO_EAS/README.md",
+          "03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md",
+          "skills/reverse-engineering-ios-app-with-frida/assets/template.md",
+          "skills/performing-dynamic-analysis-of-android-app/references/api-reference.md"
+        ],
+        "elapsed_ms": 2227.406,
+        "error": null,
+        "skipped": false
+      },
+      "fts5": {
+        "position": 1,
+        "top_paths": [
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/FIREBASE/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/APPLE_SIGNIN/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/OPS/INCIDENTES.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EXPO_EAS/README.md"
+        ],
+        "elapsed_ms": 11.019,
+        "top_result": {
+          "path": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/FIREBASE/README.md",
+          "title": "Firebase — Phone Auth (sign-in por teléfono)",
+          "key": "firebase",
+          "namespace": "tchasky.deploy",
+          "tags": [
+            "firebase",
+            "project id",
+            "app id",
+            "phone auth",
+            "android",
+            "sha1",
+            "credenciales"
+          ],
+          "status": "active",
+          "verified": "2026-08-13",
+          "stale_after": "2026-09-13",
+          "is_stale": false,
+          "sources": [
+            "Firebase Console",
+            "Google Cloud Console",
+            "GOOGLE_OAUTH/README.md"
+          ],
+          "score": 106.030258
+        }
+      }
+    },
+    {
+      "id": "OP06",
+      "question": "¿Cuál es el ID del proyecto de Vercel que despliega el frontend web?",
+      "expected_document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md",
+      "evidence_terms": [
+        "prj_q8f85BuPB6TG8x5BdwmLa86ja2Yi",
+        "tchasky-web"
+      ],
+      "rag": {
+        "position": 1,
+        "top_paths": [
+          "03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md",
+          "03_Tchasky/TIER3_INFRA_QA_2026-07-24.md",
+          "03_Tchasky/AUDITORIA_INFRA_2026-07-31.md",
+          "06_CONVERSACIONES_CLAUDE_EXPORT/N1-FRONTEND_Web_React/2026-06-09_6d94d49a.md",
+          "03_Tchasky/HISTORICO_CIERRES_PENDIENTES_2026-08-04.md"
+        ],
+        "elapsed_ms": 2337.525,
+        "error": null,
+        "skipped": false
+      },
+      "fts5": {
+        "position": 1,
+        "top_paths": [
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/OPS/INCIDENTES.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/SENTRY/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md"
+        ],
+        "elapsed_ms": 12.629,
+        "top_result": {
+          "path": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md",
+          "title": "Vercel — Frontend web (`apps/web`)",
+          "key": "vercel",
+          "namespace": "tchasky.deploy",
+          "tags": [
+            "vercel",
+            "frontend",
+            "web",
+            "project id",
+            "vite api url",
+            "produccion",
+            "variables"
+          ],
+          "status": "active",
+          "verified": "2026-07-29",
+          "stale_after": "2026-08-29",
+          "is_stale": false,
+          "sources": [
+            "Vercel REST API",
+            "vercel.json",
+            "variables production y preview"
+          ],
+          "score": 111.98603
+        }
+      }
+    },
+    {
+      "id": "OP07",
+      "question": "¿A qué URL de API apunta VITE_API_URL en Vercel de producción?",
+      "expected_document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md",
+      "evidence_terms": [
+        "VITE_API_URL=https://api-production-d886.up.railway.app/api/v1",
+        "production + preview"
+      ],
+      "rag": {
+        "position": 1,
+        "top_paths": [
+          "03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md",
+          "03_Tchasky/SCA_DEPENDENCIAS_2026-08-09.md",
+          "03_Tchasky/HISTORICO_CIERRES_PENDIENTES_2026-08-04.md",
+          "03_Tchasky/SEGURIDAD/INVENTARIO_SECRETOS_ROTACION.md",
+          "03_Tchasky/TIER3_LEGAL_TRIBUTARIO_2026-07-23.md"
+        ],
+        "elapsed_ms": 2621.773,
+        "error": null,
+        "skipped": false
+      },
+      "fts5": {
+        "position": 1,
+        "top_paths": [
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTGRES_REDIS/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RESEND/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTHOG/README.md"
+        ],
+        "elapsed_ms": 10.819,
+        "top_result": {
+          "path": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md",
+          "title": "Vercel — Frontend web (`apps/web`)",
+          "key": "vercel",
+          "namespace": "tchasky.deploy",
+          "tags": [
+            "vercel",
+            "frontend",
+            "web",
+            "project id",
+            "vite api url",
+            "produccion",
+            "variables"
+          ],
+          "status": "active",
+          "verified": "2026-07-29",
+          "stale_after": "2026-08-29",
+          "is_stale": false,
+          "sources": [
+            "Vercel REST API",
+            "vercel.json",
+            "variables production y preview"
+          ],
+          "score": 104.315162
+        }
+      }
+    },
+    {
+      "id": "OP08",
+      "question": "¿Cuál es el ID del proyecto de Railway de producción?",
+      "expected_document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+      "evidence_terms": [
+        "bb980d52-a858-4953-b422-93aba12acc5f",
+        "26e490d9-1c59-4096-bf1e-c260302afa2d"
+      ],
+      "rag": {
+        "position": 4,
+        "top_paths": [
+          "03_Tchasky/ESTADO_INFRA_2026-08-09.md",
+          "03_Tchasky/PENDIENTES_CIERRE_SESION_2026-07-30.md",
+          "03_Tchasky/REPORTE_ESTADO_GLOBAL_WEB_APP_2026-08-05.md",
+          "03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+          "03_Tchasky/BETA_ACCEPTANCE_CRITERIA.md"
+        ],
+        "elapsed_ms": 2606.883,
+        "error": null,
+        "skipped": false
+      },
+      "fts5": {
+        "position": 1,
+        "top_paths": [
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/OPS/INCIDENTES.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RESEND/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md"
+        ],
+        "elapsed_ms": 12.064,
+        "top_result": {
+          "path": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+          "title": "Railway — Backend (`apps/api`)",
+          "key": "railway",
+          "namespace": "tchasky.deploy",
+          "tags": [
+            "railway",
+            "project id",
+            "service id",
+            "api",
+            "project token",
+            "graphql",
+            "header",
+            "builder",
+            "railpack",
+            "migraciones",
+            "produccion"
+          ],
+          "status": "warning",
+          "verified": "2026-08-05",
+          "stale_after": "2026-09-05",
+          "is_stale": false,
+          "sources": [
+            "railway status",
+            "Railway GraphQL API",
+            "endpoint de salud de produccion",
+            "_manual_sql_migrations"
+          ],
+          "score": 91.76848
+        }
+      }
+    },
+    {
+      "id": "OP09",
+      "question": "¿Cuál es el ID del servicio API de Railway?",
+      "expected_document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+      "evidence_terms": [
+        "010a4bfe-937a-43b0-8618-82d128d7c441",
+        "Servicio API"
+      ],
+      "rag": {
+        "position": 2,
+        "top_paths": [
+          "03_Tchasky/REPORTE_ESTADO_GLOBAL_WEB_APP_2026-08-05.md",
+          "03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+          "03_Tchasky/SERVICIOS_PAGO_BETA_50USERS_2026-07-25.md",
+          "03_Tchasky/OPS/RUNBOOK_BACKUPS_RESTORE.md",
+          "03_Tchasky/DEPLOY_INFRAESTRUCTURA/README.md"
+        ],
+        "elapsed_ms": 2183.603,
+        "error": null,
+        "skipped": false
+      },
+      "fts5": {
+        "position": 1,
+        "top_paths": [
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTGRES_REDIS/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md"
+        ],
+        "elapsed_ms": 12.395,
+        "top_result": {
+          "path": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+          "title": "Railway — Backend (`apps/api`)",
+          "key": "railway",
+          "namespace": "tchasky.deploy",
+          "tags": [
+            "railway",
+            "project id",
+            "service id",
+            "api",
+            "project token",
+            "graphql",
+            "header",
+            "builder",
+            "railpack",
+            "migraciones",
+            "produccion"
+          ],
+          "status": "warning",
+          "verified": "2026-08-05",
+          "stale_after": "2026-09-05",
+          "is_stale": false,
+          "sources": [
+            "railway status",
+            "Railway GraphQL API",
+            "endpoint de salud de produccion",
+            "_manual_sql_migrations"
+          ],
+          "score": 98.847194
+        }
+      }
+    },
+    {
+      "id": "OP10",
+      "question": "¿Qué encabezado autentica un Project Token contra la API GraphQL de Railway?",
+      "expected_document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+      "evidence_terms": [
+        "Project-Access-Token: <token>",
+        "NUNCA"
+      ],
+      "rag": {
+        "position": 1,
+        "top_paths": [
+          "03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+          "03_Tchasky/RECAP_BLOQUEANTES_BETA_DINERO_REAL_2026-08-07.md",
+          "03_Tchasky/SEGURIDAD/INVENTARIO_SECRETOS_ROTACION.md",
+          "03_Tchasky/ESTADO_INFRA_2026-08-09.md",
+          "03_Tchasky/REPORTE_ESTADO_GLOBAL_WEB_APP_2026-08-05.md"
+        ],
+        "elapsed_ms": 2269.693,
+        "error": null,
+        "skipped": false
+      },
+      "fts5": {
+        "position": 1,
+        "top_paths": [
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/VERCEL/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTGRES_REDIS/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTHOG/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/MERCADO_PAGO/README.md"
+        ],
+        "elapsed_ms": 11.947,
+        "top_result": {
+          "path": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+          "title": "Railway — Backend (`apps/api`)",
+          "key": "railway",
+          "namespace": "tchasky.deploy",
+          "tags": [
+            "railway",
+            "project id",
+            "service id",
+            "api",
+            "project token",
+            "graphql",
+            "header",
+            "builder",
+            "railpack",
+            "migraciones",
+            "produccion"
+          ],
+          "status": "warning",
+          "verified": "2026-08-05",
+          "stale_after": "2026-09-05",
+          "is_stale": false,
+          "sources": [
+            "railway status",
+            "Railway GraphQL API",
+            "endpoint de salud de produccion",
+            "_manual_sql_migrations"
+          ],
+          "score": 122.707434
+        }
+      }
+    },
+    {
+      "id": "OP11",
+      "question": "¿Qué builder está activo en Railway para el backend?",
+      "expected_document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+      "evidence_terms": [
+        "RAILPACK",
+        "dockerfilePath"
+      ],
+      "rag": {
+        "position": 1,
+        "top_paths": [
+          "03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+          "03_Tchasky/BLOCKERS.md",
+          "03_Tchasky/REPORTE_ESTADO_GLOBAL_WEB_APP_2026-08-05.md",
+          "03_Tchasky/HISTORICO_CIERRES_PENDIENTES_2026-08-04.md",
+          "03_Tchasky/BITACORA_TCHASKY.md"
+        ],
+        "elapsed_ms": 2446.929,
+        "error": null,
+        "skipped": false
+      },
+      "fts5": {
+        "position": 1,
+        "top_paths": [
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/MERCADO_PAGO/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/SENTRY/README.md",
+          "00_COMMAND_CENTER/TOOL_REGISTRY.md"
+        ],
+        "elapsed_ms": 12.779,
+        "top_result": {
+          "path": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+          "title": "Railway — Backend (`apps/api`)",
+          "key": "railway",
+          "namespace": "tchasky.deploy",
+          "tags": [
+            "railway",
+            "project id",
+            "service id",
+            "api",
+            "project token",
+            "graphql",
+            "header",
+            "builder",
+            "railpack",
+            "migraciones",
+            "produccion"
+          ],
+          "status": "warning",
+          "verified": "2026-08-05",
+          "stale_after": "2026-09-05",
+          "is_stale": false,
+          "sources": [
+            "railway status",
+            "Railway GraphQL API",
+            "endpoint de salud de produccion",
+            "_manual_sql_migrations"
+          ],
+          "score": 91.181531
+        }
+      }
+    },
+    {
+      "id": "OP12",
+      "question": "¿El despliegue de Railway aplica automáticamente las migraciones de producción y cómo se verifican?",
+      "expected_document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+      "evidence_terms": [
+        "este script NO corre migraciones",
+        "_manual_sql_migrations"
+      ],
+      "rag": {
+        "position": 4,
+        "top_paths": [
+          "03_Tchasky/HISTORICO_CIERRES_PENDIENTES_2026-08-04.md",
+          "03_Tchasky/PENDIENTES_CIERRE_SESION_2026-08-06.md",
+          "03_Tchasky/PENDIENTES_CIERRE_SESION_2026-07-30.md",
+          "03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+          "03_Tchasky/OPS/RUNBOOK_ROLLBACK.md"
+        ],
+        "elapsed_ms": 2626.498,
+        "error": null,
+        "skipped": false
+      },
+      "fts5": {
+        "position": 1,
+        "top_paths": [
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/MERCADO_PAGO/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RESEND/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/SENTRY/README.md"
+        ],
+        "elapsed_ms": 18.197,
+        "top_result": {
+          "path": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+          "title": "Railway — Backend (`apps/api`)",
+          "key": "railway",
+          "namespace": "tchasky.deploy",
+          "tags": [
+            "railway",
+            "project id",
+            "service id",
+            "api",
+            "project token",
+            "graphql",
+            "header",
+            "builder",
+            "railpack",
+            "migraciones",
+            "produccion"
+          ],
+          "status": "warning",
+          "verified": "2026-08-05",
+          "stale_after": "2026-09-05",
+          "is_stale": false,
+          "sources": [
+            "railway status",
+            "Railway GraphQL API",
+            "endpoint de salud de produccion",
+            "_manual_sql_migrations"
+          ],
+          "score": 76.186833
+        }
+      }
+    },
+    {
+      "id": "OP13",
+      "question": "¿Cuál es la cuenta de Expo usada para los builds móviles?",
+      "expected_document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EXPO_EAS/README.md",
+      "evidence_terms": [
+        "Cuenta Expo: `tchasky`",
+        "EXPO_TOKEN"
+      ],
+      "rag": {
+        "position": 1,
+        "top_paths": [
+          "03_Tchasky/DEPLOY_INFRAESTRUCTURA/EXPO_EAS/README.md",
+          "03_Tchasky/BANCO_MOBILE_ESTADO.md",
+          "03_Tchasky/REPORTE_ESTADO_GLOBAL_WEB_APP_2026-08-05.md",
+          "03_Tchasky/READINESS_MOBILE_2026-08-02.md",
+          "03_Tchasky/docs/adr/0010-mobile-framework.md"
+        ],
+        "elapsed_ms": 2280.183,
+        "error": null,
+        "skipped": false
+      },
+      "fts5": {
+        "position": 1,
+        "top_paths": [
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EXPO_EAS/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/APPLE_SIGNIN/README.md",
+          "00_COMMAND_CENTER/CURRENT_STATE.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md"
+        ],
+        "elapsed_ms": 10.59,
+        "top_result": {
+          "path": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EXPO_EAS/README.md",
+          "title": "Expo / EAS — Build y distribución mobile (`apps/mobile`)",
+          "key": "expo_eas",
+          "namespace": "tchasky.deploy",
+          "tags": [
+            "expo",
+            "eas",
+            "builds",
+            "mobile",
+            "ios",
+            "android",
+            "bundle id",
+            "cuenta"
+          ],
+          "status": "needs_verification",
+          "verified": "2026-08-03",
+          "stale_after": "2026-09-03",
+          "is_stale": false,
+          "sources": [
+            "apps/mobile/app.json",
+            "Expo y EAS",
+            "App Store Connect",
+            "Google Play Console"
+          ],
+          "score": 94.338547
+        }
+      }
+    },
+    {
+      "id": "OP14",
+      "question": "¿Cuál es el Bundle ID real de la aplicación móvil en iOS y Android?",
+      "expected_document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EXPO_EAS/README.md",
+      "evidence_terms": [
+        "com.tchasky.mobile",
+        "NO `com.tchasky.app`"
+      ],
+      "rag": {
+        "position": 1,
+        "top_paths": [
+          "03_Tchasky/DEPLOY_INFRAESTRUCTURA/EXPO_EAS/README.md",
+          "03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md",
+          "03_Tchasky/DEPLOY_INFRAESTRUCTURA/FIREBASE/README.md",
+          "03_Tchasky/UIUX_SKILLS_SCAN_MOBILE_2026-07-30.md",
+          "03_Tchasky/PENDIENTES_CIERRE_SESION_2026-07-30.md"
+        ],
+        "elapsed_ms": 3173.364,
+        "error": null,
+        "skipped": false
+      },
+      "fts5": {
+        "position": 1,
+        "top_paths": [
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EXPO_EAS/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/FIREBASE/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/OPS/INCIDENTES.md",
+          "00_COMMAND_CENTER/CURRENT_STATE.md"
+        ],
+        "elapsed_ms": 13.996,
+        "top_result": {
+          "path": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EXPO_EAS/README.md",
+          "title": "Expo / EAS — Build y distribución mobile (`apps/mobile`)",
+          "key": "expo_eas",
+          "namespace": "tchasky.deploy",
+          "tags": [
+            "expo",
+            "eas",
+            "builds",
+            "mobile",
+            "ios",
+            "android",
+            "bundle id",
+            "cuenta"
+          ],
+          "status": "needs_verification",
+          "verified": "2026-08-03",
+          "stale_after": "2026-09-03",
+          "is_stale": false,
+          "sources": [
+            "apps/mobile/app.json",
+            "Expo y EAS",
+            "App Store Connect",
+            "Google Play Console"
+          ],
+          "score": 74.14301
+        }
+      }
+    },
+    {
+      "id": "OP15",
+      "question": "¿Qué rama viva contiene el producto en drolok/tchasky?",
+      "expected_document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+      "evidence_terms": [
+        "feature/mobile-foundation",
+        "drolok/tchasky"
+      ],
+      "rag": {
+        "position": 4,
+        "top_paths": [
+          "03_Tchasky/BITACORA_TCHASKY.md",
+          "03_Tchasky/MAPA_PROYECTO.md",
+          "03_Tchasky/CURRENT_STATE.md",
+          "03_Tchasky/LLAVES_Y_SHAS.md",
+          "03_Tchasky/TCHASKY_MOC.md"
+        ],
+        "elapsed_ms": 2520.635,
+        "error": null,
+        "skipped": false
+      },
+      "fts5": {
+        "position": 1,
+        "top_paths": [
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/OPS/INCIDENTES.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/README.md",
+          "00_COMMAND_CENTER/TOOL_REGISTRY.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md"
+        ],
+        "elapsed_ms": 23.009,
+        "top_result": {
+          "path": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+          "title": "LLAVES Y SHAS — los identificadores que hay que poder recuperar",
+          "key": "identifiers",
+          "namespace": "tchasky.operations",
+          "tags": [
+            "llaves",
+            "shas",
+            "sha1",
+            "commits",
+            "rama activa",
+            "migraciones",
+            "runtime version",
+            "endpoints"
+          ],
+          "status": "mixed",
+          "verified": "2026-08-13",
+          "stale_after": "2026-09-13",
+          "is_stale": false,
+          "sources": [
+            "git rev-parse y git status",
+            "apps/api/src/db/migrations",
+            "handoffs operativos citados en el documento"
+          ],
+          "score": 57.377239
+        }
+      }
+    },
+    {
+      "id": "OP16",
+      "question": "¿Qué migración agregó palette e is_founding_member a users?",
+      "expected_document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+      "evidence_terms": [
+        "0080_palette_preferences_and_founding_member",
+        "users.is_founding_member"
+      ],
+      "rag": {
+        "position": 1,
+        "top_paths": [
+          "03_Tchasky/LLAVES_Y_SHAS.md",
+          "03_Tchasky/PLAN_TECNICO_B1_7.md",
+          "06_CONVERSACIONES_CLAUDE_EXPORT/taskychasky/2026-04-30_87795fc4.md",
+          "skills/post-exploiting-microsoft-graph-with-graphrunner/references/api-reference.md",
+          "06_CONVERSACIONES_CLAUDE_EXPORT/N0-ESTADO_Registro_Global/2026-06-09_567e56cb.md"
+        ],
+        "elapsed_ms": 2614.809,
+        "error": null,
+        "skipped": false
+      },
+      "fts5": {
+        "position": 1,
+        "top_paths": [
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/CURRENT_STATE.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md",
+          "00_COMMAND_CENTER/TOOL_REGISTRY.md",
+          "00_COMMAND_CENTER/CURRENT_STATE.md"
+        ],
+        "elapsed_ms": 8.469,
+        "top_result": {
+          "path": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+          "title": "LLAVES Y SHAS — los identificadores que hay que poder recuperar",
+          "key": "identifiers",
+          "namespace": "tchasky.operations",
+          "tags": [
+            "llaves",
+            "shas",
+            "sha1",
+            "commits",
+            "rama activa",
+            "migraciones",
+            "runtime version",
+            "endpoints"
+          ],
+          "status": "mixed",
+          "verified": "2026-08-13",
+          "stale_after": "2026-09-13",
+          "is_stale": false,
+          "sources": [
+            "git rev-parse y git status",
+            "apps/api/src/db/migrations",
+            "handoffs operativos citados en el documento"
+          ],
+          "score": 59.411883
+        }
+      }
+    },
+    {
+      "id": "OP17",
+      "question": "¿Qué runtimeVersion efectivo deben compartir los binarios y las actualizaciones OTA?",
+      "expected_document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+      "evidence_terms": [
+        "`1.0.0`",
+        "runtimeVersion"
+      ],
+      "rag": {
+        "position": null,
+        "top_paths": [
+          "skills/implementing-device-posture-assessment-in-zero-trust/assets/template.md",
+          "02_HANDOFFS_Y_AUDITORIAS/codex/fase_1_6_plan_de_accion_exacto.md",
+          "skills/hunting-for-living-off-the-land-binaries/references/standards.md",
+          "03_Tchasky/PRIORIDADES_BETA_DINERO_REAL_2026-08-07.md",
+          "skills/hunting-for-living-off-the-land-binaries/SKILL.md"
+        ],
+        "elapsed_ms": 2267.507,
+        "error": null,
+        "skipped": false
+      },
+      "fts5": {
+        "position": 1,
+        "top_paths": [
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+          "00_COMMAND_CENTER/CURRENT_STATE.md",
+          "00_COMMAND_CENTER/TOOL_REGISTRY.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTGRES_REDIS/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EXPO_EAS/README.md"
+        ],
+        "elapsed_ms": 9.673,
+        "top_result": {
+          "path": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md",
+          "title": "LLAVES Y SHAS — los identificadores que hay que poder recuperar",
+          "key": "identifiers",
+          "namespace": "tchasky.operations",
+          "tags": [
+            "llaves",
+            "shas",
+            "sha1",
+            "commits",
+            "rama activa",
+            "migraciones",
+            "runtime version",
+            "endpoints"
+          ],
+          "status": "mixed",
+          "verified": "2026-08-13",
+          "stale_after": "2026-09-13",
+          "is_stale": false,
+          "sources": [
+            "git rev-parse y git status",
+            "apps/api/src/db/migrations",
+            "handoffs operativos citados en el documento"
+          ],
+          "score": 37.499772
+        }
+      }
+    },
+    {
+      "id": "OP18",
+      "question": "¿En qué puerto escucha la API del worktree principal <PRIVATE_PROJECT>?",
+      "expected_document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTGRES_REDIS/README.md",
+      "evidence_terms": [
+        "`<PRIVATE_PROJECT>` (principal) | 3001",
+        "Puertos de API por worktree"
+      ],
+      "rag": {
+        "position": 1,
+        "top_paths": [
+          "03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTGRES_REDIS/README.md",
+          "06_CONVERSACIONES_CLAUDE_EXPORT/taskychasky/2026-04-30_87795fc4.md",
+          "02_HANDOFFS_Y_AUDITORIAS/codex/fase_1_6_action_registry.json",
+          "05_SNAPSHOTS_CODIGO_RAIZ/proyectos_privados/CONTEXT_2026-07-11_1.md",
+          "05_SNAPSHOTS_CODIGO_RAIZ/proyectos_privados/CONTEXT_2026-07-11_2.md"
+        ],
+        "elapsed_ms": 2317.29,
+        "error": null,
+        "skipped": false
+      },
+      "fts5": {
+        "position": 1,
+        "top_paths": [
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTGRES_REDIS/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/CURRENT_STATE.md",
+          "00_COMMAND_CENTER/CURRENT_STATE.md",
+          "00_COMMAND_CENTER/TOOL_REGISTRY.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/RAILWAY/README.md"
+        ],
+        "elapsed_ms": 9.637,
+        "top_result": {
+          "path": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTGRES_REDIS/README.md",
+          "title": "PostgreSQL + Redis",
+          "key": "postgres_redis",
+          "namespace": "tchasky.deploy",
+          "tags": [
+            "postgres",
+            "redis",
+            "puertos",
+            "worktrees",
+            "api",
+            "bullmq",
+            "noeviction"
+          ],
+          "status": "active",
+          "verified": "2026-07-29",
+          "stale_after": "2026-08-29",
+          "is_stale": false,
+          "sources": [
+            "docker-compose.yml",
+            "configuracion de worktrees",
+            "redis-cli"
+          ],
+          "score": 67.312955
+        }
+      }
+    },
+    {
+      "id": "OP19",
+      "question": "¿Qué proveedor activo recibe el correo de soporte@tchasky.pe?",
+      "expected_document": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EMAIL_SOPORTE/README.md",
+      "evidence_terms": [
+        "Proveedor: ImprovMX",
+        "Estado: ACTIVO"
+      ],
+      "rag": {
+        "position": 1,
+        "top_paths": [
+          "03_Tchasky/DEPLOY_INFRAESTRUCTURA/EMAIL_SOPORTE/README.md",
+          "03_Tchasky/PROMPT_CLAUDE_DESIGN_TCHASKY.md",
+          "03_Tchasky/UIUX_SKILLS_SCAN_WEB_2026-07-30.md",
+          "03_Tchasky/SERVICIOS_PAGO_BETA_50USERS_2026-07-25.md",
+          "03_Tchasky/SOPs/SOP_RECLAMACIONES_LIBRO.md"
+        ],
+        "elapsed_ms": 2316.998,
+        "error": null,
+        "skipped": false
+      },
+      "fts5": {
+        "position": 1,
+        "top_paths": [
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EMAIL_SOPORTE/README.md",
+          "00_COMMAND_CENTER/CURRENT_STATE.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/OPS/INCIDENTES.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/FIREBASE/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/LLAVES_Y_SHAS.md"
+        ],
+        "elapsed_ms": 10.711,
+        "top_result": {
+          "path": "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/EMAIL_SOPORTE/README.md",
+          "title": "Email corporativo — soporte@tchasky.pe",
+          "key": "support_email",
+          "namespace": "tchasky.deploy",
+          "tags": [
+            "email",
+            "soporte",
+            "improvmx",
+            "dns",
+            "mx",
+            "spf",
+            "activo"
+          ],
+          "status": "active",
+          "verified": "2026-08-04",
+          "stale_after": "2026-09-04",
+          "is_stale": false,
+          "sources": [
+            "prueba real de recepcion",
+            "registros DNS de Vercel",
+            "panel de ImprovMX"
+          ],
+          "score": 100.521436
+        }
+      }
+    },
+    {
+      "id": "OP20",
+      "question": "¿En qué puerto figura AnythingLLM en el registro de herramientas?",
+      "expected_document": "00_COMMAND_CENTER/TOOL_REGISTRY.md",
+      "evidence_terms": [
+        "| AnythingLLM |",
+        "Puerto `3101`"
+      ],
+      "rag": {
+        "position": null,
+        "top_paths": [
+          "skills/hunting-for-persistence-mechanisms-in-windows/references/api-reference.md",
+          "skills/hunting-for-ntlm-relay-attacks/references/api-reference.md",
+          "skills/hunting-for-persistence-mechanisms-in-windows/references/standards.md",
+          "skills/detecting-ntlm-relay-with-event-correlation/references/api-reference.md",
+          "skills/analyzing-windows-shellbag-artifacts/SKILL.md"
+        ],
+        "elapsed_ms": 2623.122,
+        "error": null,
+        "skipped": false
+      },
+      "fts5": {
+        "position": 1,
+        "top_paths": [
+          "00_COMMAND_CENTER/TOOL_REGISTRY.md",
+          "00_COMMAND_CENTER/CURRENT_STATE.md",
+          "00_COMMAND_CENTER/SYSTEM_HEALTH.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/POSTGRES_REDIS/README.md",
+          "01_OBSIDIAN/BIS_BRAIN/03_Tchasky/DEPLOY_INFRAESTRUCTURA/GOOGLE_OAUTH/README.md"
+        ],
+        "elapsed_ms": 8.074,
+        "top_result": {
+          "path": "00_COMMAND_CENTER/TOOL_REGISTRY.md",
+          "title": "Tool Registry",
+          "key": "tool_registry",
+          "namespace": "ai_workflow.operations",
+          "tags": [
+            "registro de herramientas",
+            "herramientas",
+            "servicios",
+            "puertos",
+            "anythingllm",
+            "docker",
+            "versiones"
+          ],
+          "status": "stale",
+          "verified": "2026-08-13",
+          "stale_after": "2026-08-13",
+          "is_stale": true,
+          "sources": [
+            "auditoria manual de fases 1 y 2",
+            "registros generados SCRIPTS SERVICES MCP SKILLS AGENTS PLUGINS",
+            "git log del propio documento"
+          ],
+          "score": 86.912653
+        }
+      }
+    }
+  ]
+}

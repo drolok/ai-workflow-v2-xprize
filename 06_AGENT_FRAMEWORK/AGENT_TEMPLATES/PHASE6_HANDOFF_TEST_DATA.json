@@ -1,0 +1,17 @@
+{
+  "next_steps": [
+    "Revisar AGENT_FRAMEWORK.md y AGENT_ROLES.md para confirmar el rol exacto del siguiente agente.",
+    "Usar CONTEXT_PACK_TEMPLATE.md para preparar un paquete de contexto especifico antes de cualquier trabajo de producto.",
+    "Abrir Fase 7 solo despues de aprobacion explicita de auditoria."
+  ],
+  "artifacts": [
+    "C:\\AI_WORKFLOW\\06_AGENT_FRAMEWORK\\AGENT_FRAMEWORK.md",
+    "C:\\AI_WORKFLOW\\06_AGENT_FRAMEWORK\\AGENT_ROLES.md",
+    "C:\\AI_WORKFLOW\\06_AGENT_FRAMEWORK\\AGENT_TEMPLATES\\CONTEXT_PACK_TEMPLATE.md",
+    "C:\\AI_WORKFLOW\\06_AGENT_FRAMEWORK\\AGENT_TEMPLATES\\AGENT_HANDOFF_TEMPLATE.md"
+  ],
+  "open_questions": [
+    "Ninguna para la estructura base de Fase 6.",
+    "La siguiente decision valida ya pertenece a Fase 7: como aplicar este framework al trabajo de TCHASKY."
+  ]
+}

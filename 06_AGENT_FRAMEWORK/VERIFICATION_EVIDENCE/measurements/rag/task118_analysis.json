@@ -1,0 +1,1114 @@
+{
+  "arms": {
+    "A": {
+      "amortized_seconds_per_hit": 4.660488278190314,
+      "answerable": 80,
+      "answerable_total_seconds": 270.30832013503823,
+      "correct_abstentions": 0,
+      "hit_ids": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        11,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        33,
+        34,
+        35,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        49,
+        50,
+        51,
+        53,
+        54,
+        55,
+        58,
+        59,
+        60,
+        63,
+        64,
+        65,
+        67,
+        68,
+        69,
+        73,
+        74,
+        76,
+        77,
+        78,
+        79,
+        81,
+        82,
+        83,
+        84
+      ],
+      "hits": 58,
+      "latency_mean_seconds": 3.3040743721139734,
+      "latency_median_seconds": 3.3124725709931226,
+      "latency_p95_seconds": 4.149251317008748,
+      "miss_ids": [
+        5,
+        6,
+        7,
+        10,
+        12,
+        19,
+        31,
+        32,
+        36,
+        47,
+        48,
+        52,
+        56,
+        57,
+        61,
+        62,
+        66,
+        70,
+        71,
+        72,
+        75,
+        80
+      ],
+      "recall_percent": 72.5,
+      "successful_query_mean_seconds": 3.4074168548277473,
+      "unanswerable": 8
+    },
+    "B": {
+      "amortized_seconds_per_hit": 29.299959583692544,
+      "answerable": 80,
+      "answerable_total_seconds": 292.99959583692544,
+      "correct_abstentions": 0,
+      "hit_ids": [
+        4,
+        17,
+        18,
+        20,
+        21,
+        23,
+        24,
+        25,
+        28,
+        30
+      ],
+      "hits": 10,
+      "latency_mean_seconds": 3.8523860473854836,
+      "latency_median_seconds": 3.426207856500696,
+      "latency_p95_seconds": 6.926917261997005,
+      "miss_ids": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        19,
+        22,
+        26,
+        27,
+        29,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "recall_percent": 12.5,
+      "successful_query_mean_seconds": 3.476715166096983,
+      "unanswerable": 8
+    },
+    "C": {
+      "amortized_seconds_per_hit": 194.58975711996027,
+      "answerable": 80,
+      "answerable_total_seconds": 194.58975711996027,
+      "completion_tokens_total": 10711,
+      "correct_abstentions": 7,
+      "hit_ids": [
+        23
+      ],
+      "hits": 1,
+      "latency_mean_seconds": 2.4804913636815566,
+      "latency_median_seconds": 2.1920349314968917,
+      "latency_p95_seconds": 5.082306316995528,
+      "miss_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "model_calls_answerable": 168,
+      "model_calls_total": 192,
+      "model_seconds_total": 189.48843563502305,
+      "prompt_tokens_total": 244099,
+      "recall_percent": 1.25,
+      "successful_query_mean_seconds": 1.9069295249937568,
+      "tool_call_distribution": {
+        "1": 79,
+        "2": 5,
+        "3": 2,
+        "4": 1,
+        "5": 1
+      },
+      "tool_calls_answerable": 88,
+      "tool_calls_mean": 1.1818181818181819,
+      "tool_calls_per_hit_amortized": 88.0,
+      "tool_calls_total": 104,
+      "unanswerable": 8
+    }
+  },
+  "categories": {
+    "A": {
+      "auditoria_pc": {
+        "hits": 1,
+        "recall_percent": 100.0,
+        "total": 1
+      },
+      "ciberseguridad": {
+        "hits": 22,
+        "recall_percent": 64.70588235294117,
+        "total": 34
+      },
+      "corpus_personal": {
+        "hits": 11,
+        "recall_percent": 78.57142857142857,
+        "total": 14
+      },
+      "documentacion_tecnica_tchasky": {
+        "hits": 10,
+        "recall_percent": 71.42857142857143,
+        "total": 14
+      },
+      "estado_y_operacion": {
+        "hits": 6,
+        "recall_percent": 75.0,
+        "total": 8
+      },
+      "framework_skills": {
+        "hits": 7,
+        "recall_percent": 87.5,
+        "total": 8
+      },
+      "qm": {
+        "hits": 1,
+        "recall_percent": 100.0,
+        "total": 1
+      }
+    },
+    "B": {
+      "auditoria_pc": {
+        "hits": 0,
+        "recall_percent": 0.0,
+        "total": 1
+      },
+      "ciberseguridad": {
+        "hits": 0,
+        "recall_percent": 0.0,
+        "total": 34
+      },
+      "corpus_personal": {
+        "hits": 5,
+        "recall_percent": 35.714285714285715,
+        "total": 14
+      },
+      "documentacion_tecnica_tchasky": {
+        "hits": 1,
+        "recall_percent": 7.142857142857143,
+        "total": 14
+      },
+      "estado_y_operacion": {
+        "hits": 4,
+        "recall_percent": 50.0,
+        "total": 8
+      },
+      "framework_skills": {
+        "hits": 0,
+        "recall_percent": 0.0,
+        "total": 8
+      },
+      "qm": {
+        "hits": 0,
+        "recall_percent": 0.0,
+        "total": 1
+      }
+    },
+    "C": {
+      "auditoria_pc": {
+        "hits": 0,
+        "recall_percent": 0.0,
+        "total": 1
+      },
+      "ciberseguridad": {
+        "hits": 0,
+        "recall_percent": 0.0,
+        "total": 34
+      },
+      "corpus_personal": {
+        "hits": 1,
+        "recall_percent": 7.142857142857143,
+        "total": 14
+      },
+      "documentacion_tecnica_tchasky": {
+        "hits": 0,
+        "recall_percent": 0.0,
+        "total": 14
+      },
+      "estado_y_operacion": {
+        "hits": 0,
+        "recall_percent": 0.0,
+        "total": 8
+      },
+      "framework_skills": {
+        "hits": 0,
+        "recall_percent": 0.0,
+        "total": 8
+      },
+      "qm": {
+        "hits": 0,
+        "recall_percent": 0.0,
+        "total": 1
+      }
+    }
+  },
+  "conclusion": {
+    "arm_c_beats_78_6": false,
+    "arm_c_beats_current_rag": false,
+    "recommendation": "Mantener el RAG como recuperación predeterminada; no reemplazar ni desplegar el complemento medido."
+  },
+  "corpus": {
+    "canonical_disk_documents": 3380,
+    "disk_not_indexed_count": 175,
+    "expected_missing_in_index": [],
+    "expected_missing_on_disk": [],
+    "indexed_distinct_doc_sources": 3342,
+    "indexed_not_on_disk_count": 137,
+    "physical_files_by_root": {
+      "cybersecurity_skills": 2590,
+      "handoffs": 218,
+      "superpowers_skills": 113,
+      "vault": 465
+    },
+    "returned_not_indexed": {
+      "B": [
+        {
+          "number": 1,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 2,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 3,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 4,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 5,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 2
+        },
+        {
+          "number": 6,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 7,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 8,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 9,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 10,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 11,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 12,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 13,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 14,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 15,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 16,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 17,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 2
+        },
+        {
+          "number": 18,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 19,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 20,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 2
+        },
+        {
+          "number": 21,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 21,
+          "path": "02_HANDOFFS_Y_AUDITORIAS/codex/document_inventory.json",
+          "rank": 3
+        },
+        {
+          "number": 21,
+          "path": "02_HANDOFFS_Y_AUDITORIAS/codex/document_inventory.csv",
+          "rank": 5
+        },
+        {
+          "number": 22,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 23,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 24,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 24,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/proyecto_QM.json",
+          "rank": 4
+        },
+        {
+          "number": 25,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 26,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 26,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/proyecto_QM.json",
+          "rank": 5
+        },
+        {
+          "number": 27,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 28,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 29,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 30,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 31,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 31,
+          "path": "02_HANDOFFS_Y_AUDITORIAS/codex/document_inventory.json",
+          "rank": 3
+        },
+        {
+          "number": 31,
+          "path": "02_HANDOFFS_Y_AUDITORIAS/codex/document_inventory.csv",
+          "rank": 4
+        },
+        {
+          "number": 32,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 33,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 34,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 34,
+          "path": "02_HANDOFFS_Y_AUDITORIAS/codex/document_inventory.json",
+          "rank": 5
+        },
+        {
+          "number": 35,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 35,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/proyecto_QM.json",
+          "rank": 4
+        },
+        {
+          "number": 36,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 36,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/proyecto_QM.json",
+          "rank": 4
+        },
+        {
+          "number": 37,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 38,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 39,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 40,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 41,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 42,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 43,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 44,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 45,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 46,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 47,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 48,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 49,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 50,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 51,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 51,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/proyecto_QM.json",
+          "rank": 5
+        },
+        {
+          "number": 52,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 53,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 54,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 55,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 56,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 57,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 58,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 59,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 60,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 61,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 62,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 63,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 63,
+          "path": "02_HANDOFFS_Y_AUDITORIAS/codex/document_inventory.json",
+          "rank": 3
+        },
+        {
+          "number": 63,
+          "path": "02_HANDOFFS_Y_AUDITORIAS/codex/document_inventory.csv",
+          "rank": 4
+        },
+        {
+          "number": 64,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 65,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 65,
+          "path": "02_HANDOFFS_Y_AUDITORIAS/codex/document_inventory.json",
+          "rank": 3
+        },
+        {
+          "number": 65,
+          "path": "02_HANDOFFS_Y_AUDITORIAS/codex/document_inventory.csv",
+          "rank": 4
+        },
+        {
+          "number": 66,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 67,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 68,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 69,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 70,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 71,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 72,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 73,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 74,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 75,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 75,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/proyecto_QM.json",
+          "rank": 4
+        },
+        {
+          "number": 76,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 77,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 78,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 79,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 80,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 81,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 82,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 83,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 84,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 84,
+          "path": "03_Tchasky/Notas_Brainstorming_Legado/RESOLVER QUE ES UN PRO.txt",
+          "rank": 5
+        },
+        {
+          "number": 85,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 2
+        },
+        {
+          "number": 86,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 87,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 88,
+          "path": "QM/00_EXPORT_CLAUDE_QM/03_Datos_originales_JSON/conversaciones_mecanica_cuantica.json",
+          "rank": 1
+        },
+        {
+          "number": 88,
+          "path": "02_HANDOFFS_Y_AUDITORIAS/codex/document_inventory.json",
+          "rank": 4
+        },
+        {
+          "number": 88,
+          "path": "02_HANDOFFS_Y_AUDITORIAS/codex/document_inventory.csv",
+          "rank": 5
+        }
+      ],
+      "C": [
+        {
+          "number": 36,
+          "path": "02_HANDOFFS_Y_AUDITORIAS/codex/document_inventory.md",
+          "rank": 2
+        }
+      ]
+    },
+    "workspace_document_rows": 3501
+  },
+  "historical_subset": {
+    "hits": 33,
+    "recall_percent": 78.57142857142857,
+    "total": 42
+  },
+  "patterns": {
+    "---": [
+      5,
+      6,
+      7,
+      10,
+      12,
+      19,
+      31,
+      32,
+      36,
+      47,
+      48,
+      52,
+      56,
+      57,
+      61,
+      62,
+      66,
+      70,
+      71,
+      72,
+      75,
+      80
+    ],
+    "A--": [
+      1,
+      2,
+      3,
+      8,
+      9,
+      11,
+      13,
+      14,
+      15,
+      16,
+      22,
+      26,
+      27,
+      29,
+      33,
+      34,
+      35,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      49,
+      50,
+      51,
+      53,
+      54,
+      55,
+      58,
+      59,
+      60,
+      63,
+      64,
+      65,
+      67,
+      68,
+      69,
+      73,
+      74,
+      76,
+      77,
+      78,
+      79,
+      81,
+      82,
+      83,
+      84
+    ],
+    "AB-": [
+      4,
+      17,
+      18,
+      20,
+      21,
+      24,
+      25,
+      28,
+      30
+    ],
+    "ABC": [
+      23
+    ]
+  },
+  "remote_pilots": {
+    "gemini_case_1": {
+      "state": "provider_error_before_inference"
+    },
+    "local_cold_case_1": {
+      "hits": 0,
+      "model_calls": 3,
+      "seconds": 57.297,
+      "tool_calls": 2,
+      "total": 1
+    },
+    "nvidia_case_1_guarded": {
+      "hits": 0,
+      "model_calls": 7,
+      "prompt_tokens": 17628,
+      "seconds": 18.272,
+      "tool_calls": 6,
+      "total": 1
+    }
+  },
+  "snapshot": {
+    "answerable": 80,
+    "entries": 88,
+    "path": "/mnt/c/AI_WORKFLOW_V2/02_LOCAL_AI/ANYTHINGLLM/task118_golden_snapshot.json",
+    "sha256": "603293c5dd3d5beec1a9054d3bd51563d7f5cd2c327cbd619d480ee134b9778f",
+    "unanswerable": 8,
+    "version": "88-preguntas-v3-task115"
+  },
+  "task": "TASK-118",
+  "task115_new_subset": {
+    "hits": 25,
+    "recall_percent": 65.78947368421052,
+    "total": 38
+  }
+}

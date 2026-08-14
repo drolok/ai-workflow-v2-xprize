@@ -1,0 +1,35 @@
+apiVersion: 2024-02-01-preview
+kind: ContainerApp
+metadata:
+  name: tchasky-api
+spec:
+  managedEnvironmentId: /subscriptions/<subscription-id>/resourceGroups/<resource-group>/providers/Microsoft.App/managedEnvironments/<environment-name>
+  configuration:
+    ingress:
+      external: true
+      targetPort: 3001
+      transport: http
+    secrets:
+      - name: database-url
+        value: ${DATABASE_URL}
+      - name: redis-url
+        value: ${REDIS_URL}
+  template:
+    containers:
+      - name: api
+        image: <registry>.azurecr.io/tchasky-api:latest
+        env:
+          - name: PORT
+            value: "3001"
+          - name: NODE_ENV
+            value: "production"
+          - name: DATABASE_URL
+            secretRef: database-url
+          - name: REDIS_URL
+            secretRef: redis-url
+        resources:
+          cpu: 0.5
+          memory: 1Gi
+    scale:
+      minReplicas: 1
+      maxReplicas: 3

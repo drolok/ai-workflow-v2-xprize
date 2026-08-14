@@ -1,0 +1,8 @@
+{
+  "objective": "Definir un framework de agentes reutilizable para AI_WORKFLOW y validarlo con PROJECT_TEMPLATE como caso sintetico.",
+  "constraints": "- No tocar TCHASKY real.\n- No modificar scripts de Fase 5.\n- Mantener los artefactos autocontenidos.\n- Usar solo PROJECT_TEMPLATE como base de prueba en esta fase.",
+  "decisions": "- Los context packs y handoffs viven dentro de C:\\AI_WORKFLOW\\06_AGENT_FRAMEWORK.\n- Las plantillas deben ser compatibles con los scripts existentes de Fase 5.\n- Fase 6 solo define framework, roles, plantillas y evidencia de prueba.",
+  "agent_map": "- Codex Orchestrator prepara estructura, plantillas y evidencia.\n- Claude Code Implementer ejecuta cambios tecnicos controlados.\n- ChatGPT Pro Architect orienta arquitectura y decisiones complejas.\n- Claude Max Planner/Writer redacta documentos largos y resumentes.\n- Local AI Memory Assistant recupera contexto privado y RAG local.",
+  "assumptions": "- PROJECT_TEMPLATE tiene suficiente estructura para una validacion sintetica.\n- El siguiente agente debe entender el objetivo sin releer el chat.\n- Las rutas mas importantes deben quedar explicitas dentro del archivo generado.",
+  "next_step": "Usar este context pack como base para una primera tarea controlada de Fase 7 cuando la auditoria lo apruebe."
+}

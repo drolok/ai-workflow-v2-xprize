@@ -1,0 +1,44 @@
+[
+  {
+    "id": "20.b",
+    "title": "backticks dentro de bash -lc",
+    "why": "Los backticks se expanden igual aunque el heredoc este citado. Ya corrompio un mensaje de commit con la salida de un error de pnpm, y volvio a pasar dos veces mas el mismo dia.",
+    "instead": "Escribi el texto a un archivo y pasalo con -F/-File, o evita backticks y usa [char]10 para saltos de linea.",
+    "source": "06_AGENT_FRAMEWORK/GOTCHAS_TECNICOS_CRITICOS.md gotcha 20.b",
+    "pattern": "(?s)^(?=.*bash\\s+-lc)(?=.*\\x60)"
+  },
+  {
+    "id": "add-barrido",
+    "title": "git add sobre un directorio entero",
+    "why": "Barre todo lo que no esta trackeado. Paso dos veces el 2026-08-10: 948 y 961 archivos sin querer, y hubo que auditarlos por credenciales.",
+    "instead": "git add con la ruta explicita de cada archivo. Si son muchos, listalos primero con git status --porcelain y revisalos.",
+    "source": "medido en los commits 6df1617 y 3296e09",
+    "pattern": "git\\s+(-C\\s+\\S+\\s+)?add\\s+(-A\\b|--all\\b|\\.\\s*$|[\\w./\\\\\\-]+[/\\\\]\\s*$)"
+  },
+  {
+    "id": "codex-ruta",
+    "title": "codex sin ruta completa dentro de WSL",
+    "why": "En WSL el binario no esta en el PATH de un shell no interactivo. Falla o agarra otro binario.",
+    "instead": "Usa ~/.npm-global/bin/codex",
+    "source": "06_AGENT_FRAMEWORK/CODEX_CLAUDE_BRIDGE/SESSION_RESUME_PROTOCOL.md",
+    "pattern": "(?s)^(?=.*wsl)(?=.*\\bcodex\\b)",
+    "unless": "npm-global/bin/codex"
+  },
+  {
+    "id": "2",
+    "title": "nohup o disown dentro de wsl bash -lc",
+    "why": "El proceso muere igual cuando termina el bash. Ya nos costo horas de creer que algo corria en segundo plano.",
+    "instead": "Usa run_in_background de la propia herramienta y verifica con ps que el proceso existe.",
+    "source": "06_AGENT_FRAMEWORK/GOTCHAS_TECNICOS_CRITICOS.md gotcha 2",
+    "pattern": "(?s)^(?=.*wsl)(?=.*(nohup|disown))"
+  },
+  {
+    "id": "pwsh-alias",
+    "title": "pwsh sin ruta completa en un proceso o tarea",
+    "why": "El unico PS7 de esta maquina es el de Store: su pwsh.exe es un reparse point de 0 bytes. El PATH interactivo lo resuelve, el Programador de tareas no. El watchdog estuvo 32 horas fallando cada 3 minutos por esto y nadie lo noto.",
+    "instead": "Usa la ruta completa del alias, o powershell.exe de System32 que nunca cambia de ubicacion.",
+    "source": "CONTROL_PLANE/DECISIONES_POST_S1_2026-08-10.md",
+    "pattern": "(-FilePath|-Execute)\\s*[\\x27\\x22]?pwsh[\\x27\\x22]?(\\s|$|[\\x27\\x22])",
+    "unless": "WindowsApps|Program Files"
+  }
+]
